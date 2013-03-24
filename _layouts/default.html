@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    {% include header.html %}
+  </head>
+
+  <body>
+    <div class="container-narrow">
+      {% include navigation.html %}
+      <div class="container-fluid">
+
+	<div class="row-fluid">
+
+	  <div class="span8">
+	    {{ content }}
+	  </div>
+	  <div class="span4">
+	    {% include sidebar_recent-tweets.html %}
+	    {% include sidebar_recent-posts.html %}
+	    {% include sidebar_tag-cloud.html %}
+	  </div>
+
+	</div><!--/row-fluid-->
+      </div><!--/container-fluid-->
+
+      {% include footer.html %}
+    </div><!--/container-narrow-->
+  </body>
+</html>

@@ -1,0 +1,6 @@
+auto: true
+server: false
+
+markdown: maruku
+pygments: true
+permalink: date

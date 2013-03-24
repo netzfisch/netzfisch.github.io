@@ -1,6 +1,8 @@
+safe: true
 auto: true
-server: false
+server: true
 
 markdown: maruku
+lsi: false
 pygments: true
 permalink: date

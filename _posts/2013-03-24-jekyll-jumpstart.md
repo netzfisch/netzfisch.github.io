@@ -38,7 +38,7 @@ Than bash `$ gem install jekyll` and customise [Twitter Boostrap](http://get.boo
 
 Plugins and extensions I used so far:
 
-* Jekyll [tag-cloud plugin](https://gist.github.com/710577/) by Ilkka Laukkane
+* Jekyll [tag cloud plugin](https://gist.github.com/710577/) by Ilkka Laukkane
 * Embedded [Twitter timeline](https://dev.twitter.com/docs/embedded-timelines/)
 
 ### Deployment

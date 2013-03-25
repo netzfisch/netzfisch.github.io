@@ -1,7 +1,10 @@
-safe: true
+safe: false
 auto: true
 server: true
 
+plugins:     ./_plugins
+
+future: false
 markdown: maruku
 lsi: false
 pygments: true

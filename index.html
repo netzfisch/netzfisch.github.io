@@ -1,6 +1,6 @@
 ---
 layout: default
-title:netzfisch cordump 
+title: netzfisch coredump 
 ---
 {% for post in site.posts limit: 5 %}
   <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
@@ -10,9 +10,9 @@ title:netzfisch cordump
       <a class="pull-right" href="/tag/{{tag}}.html">{{tag}}</a>&nbsp;
     {% endfor %}
   </div>
-  <div class="label label-important">{{ post.date | date_to_string }}</div>
+  <div class="label label-important">{{ post.date | date_to_longstring }}</div>
   <div class="post_content">
-    {{ post.content | strip_html| truncatewords: 50 }}
+    {{ post.content | strip_html| truncatewords: 10 | markdownify }}
     <a href="{{ post.url }}">read more</a>
   </div>    
 {% endfor %}

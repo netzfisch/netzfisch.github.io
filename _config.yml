@@ -1,11 +1,16 @@
 safe: false
-auto: true
-server: true
+auto: false
+server: false
 
-plugins:     ./_plugins
+plugins: ./_plugins
 
 future: false
-markdown: maruku
-lsi: false
+lsi: true
 pygments: true
+markdown: maruku
 permalink: date
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile

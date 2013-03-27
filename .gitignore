@@ -1,2 +1,9 @@
-*.*~
+# because auf source vs. master branch
+_site/
+_site/*
+
+# tempory files/directory
+*~
 *.swp
+tmp/
+tmp/*

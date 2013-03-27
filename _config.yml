@@ -10,6 +10,9 @@ pygments: true
 markdown: maruku
 permalink: date
 
+tage_layout: default
+tag_page_dir: tag
+
 exclude:
   - Gemfile
   - Gemfile.lock

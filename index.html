@@ -6,13 +6,12 @@ title: netzfisch coredump
   <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
   <div class="post_tags">
     {% for tag in post.tags %}
-      {{ tag | link_to_tag: tag }}
-      <a class="pull-right" href="/tag/{{tag}}.html">{{tag}}</a>&nbsp;
-    {% endfor %}
+      <a class="pull-right" href="/tag/{{tag}}.html">{{tag}}&nbsp;</a>
+      {% endfor %}
   </div>
-  <div class="label label-important">{{ post.date | date_to_longstring }}</div>
+  <div class="label label-important">{{ post.date | date_to_string }}</div>
   <div class="post_content">
-    {{ post.content | strip_html| truncatewords: 10 | markdownify }}
+    {{ post.content | strip_html | truncatewords: 40 }}
     <a href="{{ post.url }}">read more</a>
   </div>    
 {% endfor %}

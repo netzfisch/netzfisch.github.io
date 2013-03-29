@@ -1,11 +1,9 @@
-safe: false
-auto: false
-server: false
-
-plugins: ./_plugins
+#safe: true
+auto: true
+server: true
 
 future: false
-lsi: true
+# lsi: true
 pygments: true
 markdown: maruku
 permalink: date

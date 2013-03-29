@@ -15,6 +15,7 @@ title: netzfisch... wikibrain and blogtaker
   </div>
   
   <div class="post_content">
+    <span class="label label-important pull-left">{{ post.date | date_to_long_string }}</span>
     {{ post.content | truncatewords: 100 }}
     <a href="{{ post.url }}">read more</a>
   </div>    

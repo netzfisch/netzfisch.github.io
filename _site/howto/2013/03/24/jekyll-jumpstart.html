@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Jekyll Jumpstart - switching back to static site generation &mdash; </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="some things that matter ...">
+    <meta name="author" content="" />
+
+    <!-- CSS Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+        font-family: 'Noto Serif', serif;
+      }
+      /* Custom container */
+      .container-narrow {
+	margin: 0 auto;
+	max-width: 768px;
+      }
+      .container-narrow > hr {
+	margin: 30px 0;
+      }
+      .well {
+	background-color: lightyellow;
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+
+    <!-- CSS Font -->
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Syntax Highlighting -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+  </head>
+
+  <body>
+    <div class="container-narrow">
+            <div class="navigation">
+	<ul class="nav nav-pills pull-right">
+	  <li class="active"><a href="/">Home</a></li>
+	  <li><a href="/archive.html">Archive</a></li>
+	  <li><a href="#">About</a></li>
+	</ul>
+	<h1 class="muted">netzfisch...<small> wikibrain and blogtaker</small></h1>
+      </div>
+      <hr />
+
+      <div class="container-fluid">
+
+	<div class="row-fluid">
+
+	  <div class="span8">
+	    <div id="post">
+  <h2>Jekyll Jumpstart - switching back to static site generation</h2>
+
+  <div class="post_tags">
+    <span class="label label-important">24 March 2013</span>
+    <span class="pull-right">
+      
+        <a href="/tags.html#howto">howto</a>
+      
+        <a href="/tags.html#application">application</a>
+      
+        <a href="/tags.html#jekyll">jekyll</a>
+      
+    </span>
+  </div>
+
+  <p><a href='http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html'>Blogging like a hacker</a> suited me allways best:</p>
+
+<ul>
+<li>Starting at the end of the last century with a <a href='http://web.archive.org/web/*/http://netzfisch.de'>hand made sites</a>,</li>
+
+<li>later using some ruby/perl pre-processors <a href='http://webgen.rubyforge.org/'>webgen</a>, <a href='http://thewml.org/'>WML</a>,<a href='http://wpp.sourceforge.net/'>WPP</a>,</li>
+
+<li>than switching to python based <a href='http://jtauber.com/leonardo/'>Leonardo</a> and</li>
+
+<li>later to <a href='https://github.com/xaviershay/enkit'>enki</a> a leight weight rails blog engine.</li>
+</ul>
+
+<p>I never touched the main stream systems like MoveableType or the successor WordPress, but used in various occasions <strong>Software as a Service (SaaS)</strong> like Blogger (long before it was aquired by google) and than Posterous, which just recently disappeard &#8230;</p>
+
+<p>That way I left my content in various systems and locations and never got it really aggregated back. Nowadays with Google+, FourSquare and Twitter things are getting worse!</p>
+
+<p>Sometimes I am realy tired searching for something I already commented, saved, etc. So my new content strategy aims chossing</p>
+
+<ul>
+<li>a neutral data storage (markdown) combined with a resoponsive design - better a mobile first concept</li>
+
+<li>an independent and robust solution with flexible posibilities to realize my backlog and</li>
+
+<li>a variety of deployment options to choose from.</li>
+</ul>
+
+<p>Finally it should not take me ages to get started. Sounds like <strong>back to the roots</strong> and probably partly it is. By time I will re-import integrate worthfully old content. But now lets get in into it!</p>
+
+<h3 id='jumpstart'>Jumpstart</h3>
+
+<p>Shortly I thought about <a href='http://octopress.org/docs/'>OCTOPRESS</a> but keept going the rough way. So read the Jekyll <a href='https://github.com/mojombo/jekyll/'>getting started section</a> and have a look at some sites and source code, which could serve as template or good starting point to find your way:</p>
+
+<ul>
+<li><a href='http://tom.preston-werner.com'>Tom Preston Werner</a> <a href='https://github.com/mojombo/mojombo.github.com/'>(source)</a> - minimalistic version from the Jekyll creator and github founder</li>
+
+<li><a href='http://www.uberobert.com/'>UberRobert</a> <a href='https://github.com/rbirnie/uberobert.com/'>(source)</a> - two column Twitter Bootsrap (TB) mit <em>Marketing Speak Header</em> and <strong>very</strong> clean structured source code</li>
+
+<li><a href='http://www.nateware.com/'>Nate Wieger</a> <a href='https://github.com/nateware/nateware-blog/'>(source)</a> - two column TB basis with custom google search integration</li>
+
+<li><a href='http://adamralph.com/'>Adam Ralph</a> <a href='https://github.com/adamralph/adamralph.github.com/'>(source)</a> - two column TB basis with a static tag cloud</li>
+</ul>
+
+<p>and many more on the <a href='https://github.com/mojombo/jekyll/wiki/Sites/'>Jekyll Wiki</a> Site.</p>
+
+<p>Than bash <code>$ gem install jekyll</code> and customise <a href='http://get.bootstrap.com/'>Twitter Boostrap</a> or head to <a href='http://bootswatch.com/'>Bootswatch</a> for ready to use layouts.</p>
+
+<p>Plugins and extensions I used so far:</p>
+
+<ul>
+<li>Jekyll <a href='https://gist.github.com/710577/'>tag cloud plugin</a> by Ilkka Laukkan</li>
+
+<li>Embedded <a href='https://dev.twitter.com/docs/embedded-timelines/'>Twitter timeline</a></li>
+</ul>
+
+<h3 id='deployment'>Deployment</h3>
+
+<p>Ther are variety of <a href='https://github.com/mojombo/jekyll/wiki/Deployment'>options</a>:</p>
+
+<ol>
+<li>push to <a href='https://github.com'>github</a> and get version control - community participation for free</li>
+
+<li>push to <a href='http://heroku.com'>heroku</a> and scale away</li>
+
+<li>push to <a href='http://www.nateware.com/jekyll-plus-twitter-bootstrap-on-s3.html'>amazon S3</a> wiht CloudFront, as <a href='http://www.allthingsdistributed.com/2011/08/Jekyll-amazon-s3.html'>Jeff Bezos</a> also does</li>
+
+<li>or just <strong>rsync</strong> the _site directory to your static webserver</li>
+</ol>
+
+<p>Your choice, my favorites are GitHub:</p>
+
+<pre><code>$ git init
+$ git add .
+$ git commit -m &#39;initial blog commit&#39;
+$ git remote add origin git@github.com:YourRepository/YourRepository.git
+$ git push origin master</code></pre>
+
+<p>and heroku:</p>
+
+<pre><code>$ git init
+$ git add .
+$ git commit -m &#39;initial blog commit&#39;
+$ heroku create
+$ git config branch.master.remote heroku
+$ git push heroku master</code></pre>
+
+<p>That it is, have fun.</p>
+</div>
+
+<div class="label label-success">Comments are welcome, just give'me a tweet !</div>
+
+<div id="related">
+  <h3>Related Posts</h3>
+    <ul class="posts">
+      
+        <li><span>27 March 2013</span> &raquo; <a href="/howto/2013/03/27/deploying-jekyll-to-github-pages.html">Deploying Jekyll to Github-Pages with usage of plugins</a></li>
+      
+        <li><span>26 May 2010</span> &raquo; <a href="/howto/2010/05/26/steuererklaerung-mit-elster-unter-ubuntu-lucid-lynx.html">Steuererklaerung mit Ubuntu 10.4 (Lucid Lynx)</a></li>
+      
+    </ul>
+</div>
+
+	  </div>
+	  <div class="span4">
+	    <div class="well well-small">
+  <h5 class="muted">TAG CLOUD</h5>
+  <a style='font-size: 70%' href='/tags.html#wine'>wine</a>
+<a style='font-size: 170%' href='/tags.html#howto'>howto</a>
+<a style='font-size: 70%' href='/tags.html#github'>github</a>
+<a style='font-size: 170%' href='/tags.html#application'>application</a>
+<a style='font-size: 70%' href='/tags.html#elster'>elster</a>
+<a style='font-size: 70%' href='/tags.html#plugins'>plugins</a>
+<a style='font-size: 70%' href='/tags.html#ubuntu'>ubuntu</a>
+<a style='font-size: 170%' href='/tags.html#jekyll'>jekyll</a>
+ 
+</div>
+
+	    <div class="well well-small">
+  <h5 class="muted">RECENT POSTS</h5>
+  <ul class="posts unstyled">
+  
+  <li><span>27 Mar 2013</span> &raquo; <a href="/howto/2013/03/27/deploying-jekyll-to-github-pages.html">Deploying Jekyll to Github-Pages with usage of plugins</a></li>
+  
+  <li><span>24 Mar 2013</span> &raquo; <a href="/howto/2013/03/24/jekyll-jumpstart.html">Jekyll Jumpstart - switching back to static site generation</a></li>
+  
+  <li><span>26 May 2010</span> &raquo; <a href="/howto/2010/05/26/steuererklaerung-mit-elster-unter-ubuntu-lucid-lynx.html">Steuererklaerung mit Ubuntu 10.4 (Lucid Lynx)</a></li>
+  
+</ul>
+
+</div>
+
+	    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/netzfisch" data-widget-id="315496238994821121" data-link-color="#46a546" data-related="twitterapi,twitter" width="auto" height="400">Tweets von @netzfisch</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	  </div>
+
+	</div><!--/row-fluid-->
+      </div><!--/container-fluid-->
+
+          <hr />
+    <div class="footer">
+      <p>&copy; by netzfisch 2013</p>
+    </div>
+
+    </div><!--/container-narrow-->
+  </body>
+</html>

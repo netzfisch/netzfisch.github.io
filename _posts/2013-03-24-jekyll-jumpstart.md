@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Jekyll Jumpstart
 category: howto
 tags: howto application jekyll
+title: Jekyll Jumpstart - switching back to static site generation
 ---
-[Bblogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) suited me allways best:
+[Blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) suited me allways best:
 
 * Starting at the end of the last century with a [hand made sites](http://web.archive.org/web/*/http://netzfisch.de),
 * later using some ruby/perl pre-processors [webgen](http://webgen.rubyforge.org/), [WML](http://thewml.org/),[WPP](http://wpp.sourceforge.net/),
@@ -38,7 +38,7 @@ Than bash `$ gem install jekyll` and customise [Twitter Boostrap](http://get.boo
 
 Plugins and extensions I used so far:
 
-* Jekyll [tag cloud plugin](https://gist.github.com/710577/) by Ilkka Laukkane
+* Jekyll [tag cloud plugin](https://gist.github.com/710577/) by Ilkka Laukkan
 * Embedded [Twitter timeline](https://dev.twitter.com/docs/embedded-timelines/)
 
 ### Deployment

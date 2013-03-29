@@ -1,12 +1,16 @@
-#safe: true
-auto: true
-server: true
+safe:        false 
+auto:        true
+server:      true
 
-future: false
-# lsi: true
-pygments: true
-markdown: maruku
-permalink: date
+#source:      ./
+#destination: ./_site
+plugins:     ./_plugins
+
+future:      false
+lsi:         false
+pygments:    true
+markdown:    maruku
+permalink:   date
 
 exclude:
   - Gemfile

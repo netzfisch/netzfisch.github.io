@@ -28,6 +28,7 @@ end
 
 desc "Generate and publish blog to github-pages"
 task :publish => [:generate] do
+  system "git push origin source"
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
     Dir.chdir tmp

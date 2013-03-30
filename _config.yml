@@ -1,9 +1,14 @@
-safe:        false 
-auto:        true
-server:      true
+title:       "netzfisch's ...wikibrain and blogtaker"
+url:         http://netzfisch.github.com
+author:      netzfisch
+email:       tweet@me
 
-#source:      ./
-#destination: ./_site
+safe:        false 
+auto:        false
+server:      false
+
+# source:      ./
+# destination: ./_site
 plugins:     ./_plugins
 
 future:      false

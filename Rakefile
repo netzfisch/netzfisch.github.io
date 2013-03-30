@@ -28,6 +28,8 @@ end
 
 desc "Generate and publish blog to github-pages"
 task :publish => [:generate] do
+  system "git add ."
+  system "git commit -a -m 'another post'"
   system "git push -u origin source"
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp

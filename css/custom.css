@@ -1,0 +1,33 @@
+      body {
+	background-color: transparent;
+	background-image: url('img/canvas-texture.png');
+	padding-top: 20px;
+	padding-bottom: 40px;
+        font-family: 'Noto Sans', sans-serif;
+      }
+      /* Custom container */
+      .container-narrow {
+	margin: 0 auto;
+	max-width: 840px;
+      }
+      .container-narrow > hr {
+	margin: 30px 0;
+      }
+      /* Custom twitter bootstrap */
+      /*
+      /* Additionaly change following TB variables: */
+      /* @bodyBackground = transparen               */
+      /* @linkColor      = darken(@green, 5%)       */
+      /* @baseFontSize   = 16px                     */
+      .nav > li > a:hover,
+      .nav > li > a:focus {
+        text-decoration: none;
+        background-color: lightYellow;
+      }
+      .label {
+	margin-right: 8px;
+	padding: 12px 8px;
+      }
+      .well {
+	background-color: lightYellow;
+      }

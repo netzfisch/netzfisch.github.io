@@ -1,6 +1,6 @@
       body {
 	background-color: transparent;
-	background-image: url('img/canvas-texture.png');
+	background-image: url('/img/canvas-texture.png');
 	padding-top: 20px;
 	padding-bottom: 40px;
         font-family: 'Noto Sans', sans-serif;
@@ -22,12 +22,12 @@
       .nav > li > a:hover,
       .nav > li > a:focus {
         text-decoration: none;
-        background-color: lightYellow;
+        background-color: white;
       }
       .label {
 	margin-right: 8px;
 	padding: 12px 8px;
       }
       .well {
-	background-color: lightYellow;
+	background-color: white;
       }

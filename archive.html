@@ -2,7 +2,8 @@
 layout: default
 title: Archive
 ---
-<h3>by month</h3>
+<h3>Archive</h3>
+<br />
 {% for post in site.posts %}
   {% capture postmonth %}{{ post.date | date: "%B" }}{% endcapture %}
   {% capture postyear %}{{ post.date | date: "%Y" }}{% endcapture %}

@@ -4,16 +4,18 @@ layout: default
 <div id="post">
   <h2>{{ page.title }}</h2>
 
+  <div class="post_content">
+    <span class="label label-important pull-left">{{ page.date | date_to_long_string }}</span>
+    {{ content }}
+  </div>    
+
   <div class="post_tags">
-    <span class="label label-important">{{ page.date | date_to_long_string }}</span>
     <span class="pull-right">
       {% for tag in page.tags %}
         <a href="/tags.html#{{ tag }}">{{ tag }}</a>
       {% endfor %}
     </span>
   </div>
-
-  {{ content }}
 </div>
 
 <div class="label label-success">Comments are welcome, just give'me a tweet !</div>

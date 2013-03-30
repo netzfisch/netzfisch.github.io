@@ -4,9 +4,9 @@ category: howto
 tags: howto application jekyll
 title: Jekyll Jumpstart - switching back to static site generation
 ---
-[Blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) suited me allways best:
+[Blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) suited me allways best, not really suprising because of my engineer background:
 
-* Starting at the end of the last century with a [hand made sites](http://web.archive.org/web/*/http://netzfisch.de),
+* So I started at the end of the **last century** with a [hand made sites](http://web.archive.org/web/*/http://netzfisch.de),
 * later using some ruby/perl pre-processors [webgen](http://webgen.rubyforge.org/), [WML](http://thewml.org/),[WPP](http://wpp.sourceforge.net/),
 * than switching to python based [Leonardo](http://jtauber.com/leonardo/) and
 * later to [enki](https://github.com/xaviershay/enkit) a leight weight rails blog engine.

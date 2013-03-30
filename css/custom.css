@@ -19,6 +19,12 @@
       /* @bodyBackground = transparen               */
       /* @linkColor      = darken(@green, 5%)       */
       /* @baseFontSize   = 16px                     */
+      .well {
+	background-color: white;
+      }
+      .well > a {
+	padding: 6px;
+      }
       .nav > li > a:hover,
       .nav > li > a:focus {
         text-decoration: none;
@@ -27,7 +33,4 @@
       .label {
 	margin-right: 8px;
 	padding: 12px 8px;
-      }
-      .well {
-	background-color: white;
       }

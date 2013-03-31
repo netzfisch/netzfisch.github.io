@@ -8,9 +8,11 @@ title: netzfisch... wikibrain and blogtaker
   <div class="post_excerpt">
     <span class="label label-important pull-left">{{ post.date | date_to_long_string }}</span>
     {{ post.content | truncatewords: 100 }}
-    <span class="alert alert-success pull-right">
-      <a href="{{ post.url }}">read more</a> <i class="icon-arrow-right"></i></a>
-    </span>
+    <ul class="nav nav-pills pull-right">
+      <li>
+        <a href="{{ post.url }}"><i class="icon-arrow-right"></i> read more</a>
+      </li>
+    </ul>
   </div>    
 
   <hr style="clear:both" />

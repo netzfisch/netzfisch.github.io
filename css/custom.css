@@ -5,7 +5,7 @@
 	padding-bottom: 40px;
         font-family: 'Noto Sans', sans-serif;
       }
-      /* Custom container */
+      /* Custom container for smaller layout */
       .container-narrow {
 	margin: 0 auto;
 	max-width: 840px;
@@ -13,10 +13,10 @@
       .container-narrow > hr {
 	margin: 30px 0;
       }
-      /* Custom twitter bootstrap */
-      /*
+      /* Customisation for Twitter Bootstrap        */
+      /*                                            */
       /* Additionaly change following TB variables: */
-      /* @bodyBackground = transparen               */
+      /* @bodyBackground = transparent              */
       /* @linkColor      = darken(@green, 5%)       */
       /* @baseFontSize   = 16px                     */
       .well {
@@ -34,12 +34,12 @@
 	margin-right: 8px;
 	padding: 12px 8px;
       }
-      .alert {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-right: 14px;
-      }
       .alert-success {
 	display: block;
-	margin-top: 20px;
+	margin-top: 10px;
+      }
+      .post_tags > a {
+	.badge;
+	float: right;
+	margin-right: 3px;
       }

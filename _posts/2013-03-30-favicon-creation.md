@@ -1,7 +1,8 @@
 ---
 layout:    post
-tags:      2cent bash command
-title:     favicon creation
+tags:      bash command
+category:  2cent
+title:     Easy Favicon Creation
 ---
 In the old days, you could resize to 16x16 pixel, but todays brwosers support up to 64x64 pixel!
 

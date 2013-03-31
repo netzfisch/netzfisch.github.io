@@ -12,13 +12,15 @@ layout: default
   <div class="post_tags">
     <span class="pull-right">
       {% for tag in page.tags %}
-        <a href="/tags.html#{{ tag }}">{{ tag }}</a>
+        <a href="/tags.html#{{ tag }}" class="alert">{{ tag }}</a>
       {% endfor %}
     </span>
   </div>
 </div>
-
-<div class="alert alert-success"><i class="icon-info-sign"></i> Comments are welcome, just give'me a tweet !</div>
+<br class="clearfix" />
+<div class="alert alert-success">
+  <i class="icon-info-sign"></i> Comments are welcome, just give'me a tweet !
+</div>
 
 <div id="related">
   <h3>Related Posts</h3>

@@ -23,7 +23,7 @@
 	background-color: white;
       }
       .well > a {
-	padding: 6px;
+	padding: 7px;
       }
       .nav > li > a:hover,
       .nav > li > a:focus {
@@ -33,4 +33,13 @@
       .label {
 	margin-right: 8px;
 	padding: 12px 8px;
+      }
+      .alert {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-right: 14px;
+      }
+      .alert-success {
+	display: block;
+	margin-top: 20px;
       }

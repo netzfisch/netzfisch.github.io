@@ -1,0 +1,53 @@
+---
+layout:    post
+category:  howto
+tags:      heroku application enki rails
+title:     Deploying Enki at heroku
+---
+Clone enki blog at github and then get a local copy:
+
+pre(terminal). $ git clone git@github.com:netzfisch/enki.git
+$ mv enki seitenmacher
+$ cd seitenmacher
+$ git checkout -b myblog
+
+Adjust enki.yml, make sure not to use delegation, as yo need therefore 2 workers (heroku support request from/link):
+
+pre(terminal). $ git commit -a -m 'customised enki.yml'
+$ git add .gems
+$ git commit -a -m 'adding gem manifest file for heroku'
+$ git checkout master
+$ git merge myblog
+$ rake db:migrate
+
+Prepare your local box for testing development versions:
+
+pre(terminal). $ sudo apt-get install libxml2-dev libxslt1-dev
+$ sudo gem install webrat --version 0.3
+$ rake spec
+$ script/server
+
+Get ready for upload
+
+pre(terminal). $ heroku create seitenmacher
+$ git push heroku master
+$ heroku rake db:migrate
+$ heroku rake spec #check for errors, missing gems?
+$ heroku info
+=== seitenmacher
+Web URL:        http://seitenmacher.heroku.com/
+Git Repo:       git@heroku.com:seitenmacher.git
+Dynos:          1
+Workers:        0
+Repo size:      11M
+Slug size:      1M
+Data size:      440k in 10 tables
+Owner:          asdf@asdf.com
+
+Open your new created "webblog (Seitenmacher)":http://seitenmacher.heroku.com at the named URL.
+
+h2. Links
+
+* "github.com/xaviershay/enki":http://github.com/xaviershay/enki
+* "github.com/netzfisch/enki":http://github.com/netzfisch/enki
+* "docs.heroku.com":http://docs.heroku.com

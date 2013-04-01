@@ -1,0 +1,33 @@
+layout:    post
+category:  howto
+tags:      linux rails
+title:     Installing Rails on Debian / Ubuntu
+---
+h1. Get Ruby
+
+pre(bash). $ sudo apt-get update
+$ sudo apt-get install build-essential libopenssl-ruby 
+$ sudo apt-get install ruby ruby1.8-dev libsqlite3-dev
+
+h2. Installing RubyGems
+
+bq(code). $ sudo apt-get install rubygems
+
+To make gem work properly add path to ~/.bashrc:
+
+bq. export PATH=/var/lib/gems/1.8/bin:$PATH
+
+h2. Installing Rails
+
+Use RubyGems to install rails and dependencys:
+
+bq. $ sudo gem install rails sqlite3-ruby
+
+h2. Get missing gems
+
+pre(terminal). $ $ gem list --local
+sudo rake gem:install
+
+h2. Links
+
+* https://help.ubuntu.com/community/RubyOnRails

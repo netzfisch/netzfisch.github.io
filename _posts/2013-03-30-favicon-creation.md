@@ -1,10 +1,10 @@
 ---
 layout:    post
-tags:      bash command
 category:  2cent
-title:     Easy Favicon Creation
+tags:      bash
+title:     easy favicon creation
 ---
-In the old days, you could resize to 16x16 pixel, but todays brwosers support up to 64x64 pixel!
+In the old days, you could just resize to 16x16 pixel, but todays browsers support up to 64x64 pixel and also royalty free .png-format!
 
 Easy come:
 

@@ -17,7 +17,13 @@
 	  <div class="span4">
 	    {% include sidebar_social-bar.html %}
 	    {% include sidebar_tag-cloud.html %}
-	    {% include sidebar_recent-posts.html %}
+	    
+	    {% if page.url == "/index.html" %}
+ 	      {% include sidebar_recent-posts.html %}
+	    {% else %}
+ 	      {% include sidebar_related-posts.html %}
+	    {% endif %}
+
 	    {% include sidebar_recent-tweets.html %}
 	  </div>
 

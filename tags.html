@@ -7,11 +7,9 @@ title: Tags
 {% for tag in site.tags | sort: "alpha-asc" %}
   <a name="{{ tag[0] }}"></a>
   <h4 class="muted">{{ tag[0] | upcase }}</h2>
-  <ul class="unstyled">
+  <dl class="unstyled">
     {% for post in tag[1] %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
     {% endfor %}
-  </ul>
+  </dl>
 {% endfor %}

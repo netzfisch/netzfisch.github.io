@@ -16,8 +16,8 @@ title: Archive
     {% endif %}
 <a name="{{ month }}{{ year }}"></a>
 <h4 class="muted">{{ month }} {{ year }}</h4>
-<ul class="unstyled">
+<dl class="unstyled">
   {% endif %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
 {% endfor %}
-</ul>
+</dl>

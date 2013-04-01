@@ -1,0 +1,32 @@
+---
+layout:    post
+category:  howto
+tags:      coding github
+title:     Contributing code at GitHub
+---
+First hack your changes, than:
+
+pre(terminal). $ git commit -a -m 'correcting dead link'
+
+Have look at the remote structure
+
+pre(terminal). $ git remote show origin
+* remote origin
+  URL: git@github.com:netzfisch/enki.git
+  HEAD branch: master
+  Remote branches:
+    internationalized tracked
+    master            tracked
+    multiple-authors  tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local refs configured for 'git push':
+    master pushes to master (fast forwardable)
+    myblog pushes to myblog (local out of date)
+
+Create new remote branch
+
+pre(terminal). $ git push origin myblog  #or
+$ git push origin master:myblog
+
+Hit the button *Pull Request* at github.com

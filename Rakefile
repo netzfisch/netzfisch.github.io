@@ -63,7 +63,6 @@ task :new do
     post.puts "title:     #{title}"
     post.puts "---"
     post.puts ""
-    post.puts "Once upon a time..."
   end
 
   puts "A new post was created for at:"

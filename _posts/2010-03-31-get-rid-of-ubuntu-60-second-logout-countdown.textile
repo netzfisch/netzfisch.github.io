@@ -1,0 +1,9 @@
+---
+layout:    post
+category:  linux
+tags:      2cent ubuntu
+title:     Get rid of 60 second Ubuntu "logout count-down"
+---
+To get rid of the 60 second ubuntu-logout-countdown do:
+
+pre(terminal). $ gconftool -s --type bool /apps/indicator-session/suppress_logout_restart_shutdown true

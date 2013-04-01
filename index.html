@@ -1,11 +1,10 @@
 ---
 layout: default
-title: netzfisch... wikibrain and blogtaker
+title: netzfisch's ...wikibrain and blogtaker
 ---
 {% for post in site.posts limit: 5 %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
   <div class="post_excerpt">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <span class="label label-important pull-left">{{ post.date | date_to_long_string }}</span>
     {{ post.content | truncatewords: 100 }}
     <ul class="nav nav-pills pull-right">
@@ -14,11 +13,5 @@ title: netzfisch... wikibrain and blogtaker
       </li>
     </ul>
   </div>    
-
   <hr style="clear:both" />
 {% endfor %}
-
-<div id="home">
-  <h3>Recent Posts</h3>
-  {% include recent-posts.html %}
-</div>  

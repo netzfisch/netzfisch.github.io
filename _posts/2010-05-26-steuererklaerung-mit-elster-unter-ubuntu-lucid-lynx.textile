@@ -1,9 +1,9 @@
 ---
-layout: post
-date: '2010-05-26'
-category: howto
-tags: apps ubuntu wine elster
-title: Steuererklaerung mit Ubuntu 10.4 (Lucid Lynx)
+layout:    post
+date:      '2010-05-26'
+category:  linux
+tags:      application ubuntu wine elster config 2cent
+title:     Steuererklaerung mit Ubuntu 10.4 (Lucid Lynx)
 ---
 ... mit "wine":http://www.winehq.org/ läuft "ElsterFormular":https://www.elster.de/elfo_home.php unter "Ubuntu 10.4. (Lucid Lynx)":http://ubuntu.com tadellos. Nur der Aufruf einzelner Formulare ist quälend langsam, deshalb
 

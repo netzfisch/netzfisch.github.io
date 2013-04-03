@@ -1,8 +1,8 @@
 ---
 layout:    post
-category:  howto
-tags:      application git
-title:     git basics
+category:  ruby
+tags:      coding application git 2cent 
+title:     git Basics
 ---
 ### Customise to your needs
 

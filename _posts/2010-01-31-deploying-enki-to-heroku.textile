@@ -1,7 +1,7 @@
 ---
 layout:    post
-category:  howto
-tags:      heroku application enki rails
+category:  ruby
+tags:      application rails enki heroku howto
 title:     Deploying Enki at heroku
 ---
 Clone enki blog at github and then get a local copy:

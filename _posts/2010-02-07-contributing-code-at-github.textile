@@ -1,7 +1,7 @@
 ---
 layout:    post
-category:  howto
-tags:      coding github
+category:  ruby
+tags:      coding github git 2cent
 title:     Contributing code at GitHub
 ---
 First hack your changes, than:

@@ -1,5 +1,6 @@
 ---
 layout: default
+sidebar_posts: related
 ---
 <div id="post">
   <h2>{{ page.title }}</h2>
@@ -11,14 +12,13 @@ layout: default
 
   <div class="post_tags">
     {% for tag in page.tags %}
-      <a href="/tags.html#{{ tag }}" class="badge">{{ tag }}</a>
+      <a href="/tags.html#{{ tag }}" rel="tag" class="badge">{{ tag }}</a>
     {% endfor %}
   </div>
 
   <br class="clearfix" />
 
   <div class="alert alert-success text-center">
-    <strong><i class="icon-info-sign"></i> Heads up - COMMENTS are welcome, just give'me a TWEET !</strong>
+    <strong><i class="icon-info-sign"></i> Heads up - COMMENTS are welcome, just TWEET me!</strong>
   </div>
-
 </div>

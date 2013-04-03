@@ -1,6 +1,6 @@
 layout:    post
-category:  howto
-tags:      linux rails
+category:  linux
+tags:      howto rails install bash
 title:     Installing Rails on Debian / Ubuntu
 ---
 h1. Get Ruby

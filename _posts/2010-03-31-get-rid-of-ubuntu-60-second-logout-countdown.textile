@@ -1,7 +1,7 @@
 ---
 layout:    post
 category:  linux
-tags:      2cent ubuntu
+tags:      2cent ubuntu config
 title:     Get rid of 60 second Ubuntu "logout count-down"
 ---
 To get rid of the 60 second ubuntu-logout-countdown do:

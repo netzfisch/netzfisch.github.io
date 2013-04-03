@@ -1,10 +1,9 @@
 ---
 layout:    post
-category:  howto
-tags:      apps jekyll
-title:     deploying jekyll with plugins to github pages
+category:  ruby
+tags:      application jekyll config 2cent
+title:     Deploying Jekyll with plugins to GitHub Pages
 ---
-
 ... was not that easy, as I thought in my [last post][1], because [GitHub Pages][2] do **not allow any custom plugins!**. So I came up with the following strategy also used by [Octopress][3] and well described from [Ixti][4]:
 
 1. First create a scecond branch called e.g. *source*

@@ -1,8 +1,8 @@
 ---
-layout: post
-category: howto
-tags: apps jekyll
-title: jekyll jumpstart - switching back to static site generation
+layout:    post
+category:  ruby
+tags:      application jekyll install howto
+title:     Jekyll jumpstart - switching back to static site generation
 ---
 [Blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) suited me allways best, not really suprising because of my engineer background:
 
@@ -25,7 +25,7 @@ Finally it should not take me ages to get started. Sounds like **back to the roo
 
 ### Jumpstart
 
-Shortly I thought about [Octopress](http://octopress.org/docs/) as it seemed to me already quit complex and slow, so I keept going the rough way. First read the Jekyll [getting started section](https://github.com/mojombo/jekyll/) and have a look at some sites and source code, which could serve as template or good starting point to find your way:
+Shortly I thought about using [Octopress](http://octopress.org/docs/) - "The Jekyll Mercedes", but as it seemed to me relatively complex and the frontend design slow, I keept going the rough way. First read the Jekyll [getting started section](https://github.com/mojombo/jekyll/) and have a look at some sites and source code, which could serve as template or good starting point to find your way:
 
 * [Tom Preston Werner](http://tom.preston-werner.com) [(source)](https://github.com/mojombo/mojombo.github.com/) - minimalistic version from the Jekyll creator and github founder
 * [UberRobert](http://www.uberobert.com/) [(source)](https://github.com/rbirnie/uberobert.com/) - two column Twitter Bootsrap (TB) mit "**marketing speak Header**" and very **clean structured source** code

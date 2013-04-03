@@ -1,7 +1,7 @@
 ---
 layout:    post
 category:  linux
-tags:      howto application ubuntu vmware 
+tags:      application ubuntu vmware bash 2cent 
 title:     VMWare Workstation 6.5.3 Installer hangs
 ---
 The installation of VMware-Workstation-6.5.3-185404.i386.bundle at Ubuntu Karmic 9.10 hangs. Therefore do

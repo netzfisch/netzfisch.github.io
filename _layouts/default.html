@@ -18,10 +18,10 @@
 	    {% include sidebar_social-bar.html %}
 	    {% include sidebar_tag-cloud.html %}
 	    
-	    {% if page.url == "/index.html" %}
- 	      {% include sidebar_recent-posts.html %}
-	    {% else %}
+	    {% if page.sidebar_posts == 'related' %}
  	      {% include sidebar_related-posts.html %}
+	    {% else %}
+ 	      {% include sidebar_recent-posts.html %}
 	    {% endif %}
 
 	    {% include sidebar_recent-tweets.html %}

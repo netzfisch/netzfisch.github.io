@@ -4,7 +4,7 @@ title: Tags
 ---
 <h3>Tags</h3>
 <br />
-{% for tag in site.tags | sort: "alpha-asc" %}
+{% for tag in site.tags|sort:'name' %}
   <a name="{{ tag[0] }}"></a>
   <h4 class="muted">{{ tag[0] | upcase }}</h2>
   <dl class="unstyled">

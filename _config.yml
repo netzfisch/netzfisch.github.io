@@ -12,7 +12,7 @@ server:      false
 plugins:     ./_plugins
 
 future:      false
-lsi:         true 
+lsi:         false 
 pygments:    true
 markdown:    maruku
 permalink:   date

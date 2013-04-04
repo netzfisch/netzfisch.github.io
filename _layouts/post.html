@@ -3,6 +3,9 @@ layout: default
 sidebar_posts: related
 ---
 <div id="post">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="netzfisch" data-size="large" data-dnt="true">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
   <h2>{{ page.title }}</h2>
 
   <div class="post_content">
@@ -19,6 +22,11 @@ sidebar_posts: related
   <br class="clearfix" />
 
   <div class="alert alert-success text-center">
-    <strong><i class="icon-info-sign"></i> Heads up - COMMENTS are welcome, just TWEET me!</strong>
+    <strong>
+      <i class="icon-info-sign"></i> 
+      Heads up - COMMENTS are welcome:
+      <a href="https://twitter.com/intent/tweet?screen_name=netzfisch&text={{ page.title post.url }}" class="twitter-mention-button" data-size="large" data-related="netzfisch" data-dnt="true">Tweet to @netzfisch</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </strong>
   </div>
 </div>

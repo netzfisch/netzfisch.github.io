@@ -4,8 +4,8 @@ author:      netzfisch
 email:       tweet@me
 
 safe:        false 
-auto:        false
-server:      false
+auto:        true
+server:      true
 
 # source:      ./
 # destination: ./_site

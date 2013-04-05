@@ -36,10 +36,12 @@ and many more in the [Jekyll wiki](https://github.com/mojombo/jekyll/wiki/Sites/
 
 Than bash `$ gem install jekyll` and customise [Twitter Boostrap](http://get.bootstrap.com/) or head to [Bootswatch](http://bootswatch.com/) for ready to use layouts.
 
-Plugins and extensions I used so far:
+Plugins and etextensions I used so far:
 
+* Google [Web Font](http://www.google.com/fonts/) and [Font Awesome](http://fortawesome.github.com/Font-Awesome/) for social icons
 * [Logarithmic Tag Cloud](https://gist.github.com/yeban/2290195)
-* Embedded [Twitter Timeline](https://dev.twitter.com/docs/embedded-timelines/)
+* Embedded Twitter [Share Button](https://twitter.com/about/resources/buttons) and [Timeline](https://dev.twitter.com/docs/embedded-timelines/)
+* Google [Share Button](https://developers.google.com/+/web/share/) and [+1 Button](https://developers.google.com/+/web/+1button/)
 
 ### Deployment
 

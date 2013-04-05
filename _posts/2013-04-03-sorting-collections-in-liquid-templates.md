@@ -9,9 +9,9 @@ Sorting in Jekyll looks quiet simple with standard [Liquid Filter](https://githu
 Liquid converts ruby hashes to arrays, e.g the variables beneath **site** - like **categories** and **tags**:
 
 {% highlight ruby %}
-    {% for tag in site.tags %}
+    for tag in site.tags 
       <li>{{ tag[0] }}</li>
-    {% endfor %}
+    endfor 
 {% endhighlight %}
 
 ... site.tags will be converted by Jekyll to an array of tuples in which \[0\] refers to the key,\[1\] the list of values. Which you can not map to be sorted alphabetically by the key \[0\] of each tuple.

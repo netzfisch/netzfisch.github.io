@@ -3,9 +3,6 @@ layout: default
 sidebar_posts: related
 ---
 <div id="post">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="netzfisch" data-size="large" data-dnt="true">Tweet</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
   <h2>{{ page.title }}</h2>
 
   <div class="post_content">
@@ -13,34 +10,28 @@ sidebar_posts: related
     {{ content }}
   </div>    
 
-  <div class="social_sharing pull-left">
-    <a href="https://twitter.com/intent/tweet?screen_name=netzfisch&text={{ page.title post.url }}" class="twitter-mention-button" data-size="large" data-related="netzfisch" data-dnt="true">Tweet to @netzfisch</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    <!-- Place this tag where you want the +1 button to render. -->
-    <div class="g-plusone"></div>
-    <!-- Place this tag where you want the share button to render. -->
-    <div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
-
-    <!-- Place this tag after the last share tag. -->
-    <script type="text/javascript">
-      (function() {
-	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	po.src = 'https://apis.google.com/js/plusone.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	})();
-    </script>
-  </div>
-
   <div class="post_tags">
     {% for tag in page.tags %}
       <a href="/tags.html#{{ tag }}" rel="tag" class="badge">{{ tag }}</a>
     {% endfor %}
   </div>
 
-  <br class="clearfix" />
+  <div class="social_share clearfix">
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="g-plusone" href="{{ page.url }}" data-action="share" data-annotation="bubble" data-size="" data-height="28"></div>
+      <!-- Place this tag after the last +1 button tag. -->
+      <script type="text/javascript">
+	(function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+      </script>
 
-  <div class="alert alert-success text-center">
-    <strong><i class="icon-info-sign"></i>Heads up - COMMENTS are welcome, just giv'me a TWEET</strong>
+      <!-- Place this tag where you want the twitter share button to render. -->
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="netzfisch" data-size="large" data-dnt="true">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </div>
+
+
 </div>

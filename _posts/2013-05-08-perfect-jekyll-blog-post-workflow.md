@@ -11,3 +11,8 @@ Lately I switched back to a static blog generation and enjoying a higher blog po
 * save the file to [DropBox](https://dropbox.com) or [GDrive](https://gdrive.com)
 * then generate the site `$ jekyll` and
 * push to GitHub
+
+Alternatively, just edit directly at GitHub
+* than do `git pull origin soure`
+* compile `jekyll build`
+* and push `git push origin master`

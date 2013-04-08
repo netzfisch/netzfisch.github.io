@@ -4,9 +4,7 @@ category: web
 tags: 2cent rss feed coding html
 title: RSS Autodiscovery
 ---
-### Ever thought about the nifty RSS-Symbol
-
-in the browsers adress bar and how to get it there? Quiet easy - just put the the following meta-tag into the `<head>` section of your html-site:
+Ever thought about the nifty RSS-symbol in the browsers adress bar and how to get it there? Quiet easy - just put the the following meta-tag into the `<head>` section of your html-site:
 
 {% highlight html %}
 

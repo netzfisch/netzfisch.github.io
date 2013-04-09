@@ -3,6 +3,7 @@ layout: post
 category: tools
 tags: howto application jekyll markdown
 title: My Jekyll blogging workflow
+published: false
 ---
 Lately I switched back to a static blog generation and enjoying a higher blog post frequence. Following is my workflow
 

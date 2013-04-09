@@ -1,7 +1,8 @@
 title:       "netzfisch's ...wikibrain and blogtaker"
-url:         http://netzfisch.github.com
+url:         http://netzfisch.github.io/
 author:      netzfisch
 email:       tweet@me
+description: "some things that matter to me, mostly tech stuff: linux, ruby, rails, gadgets ... open source ... travel pics"
 
 safe:        false 
 auto:        false

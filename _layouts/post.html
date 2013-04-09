@@ -2,6 +2,7 @@
 layout: default
 sidebar_posts: related
 ---
+{% capture customd %}{{ page.content | strip_html | condense_spaces | truncate:150 }}{% endcapture %}
 <div id="post">
   <h2>{{ page.title }}</h2>
 
@@ -17,4 +18,14 @@ sidebar_posts: related
   </div>
 
   {% include widget_social-share.html %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+  {% endif %}
+    <a href="/archive.html">Blog Archive</a>
+  {% if paginator.previous_page %}
+    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+  {% endif %}
 </div>

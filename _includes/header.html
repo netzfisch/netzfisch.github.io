@@ -2,9 +2,9 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="some things that matter to me, mostly tech stuff: linux, ruby, rails, gadgets ... open source">
-    <meta name="author" content="{{ site.author }}" />
-    <link rel="alternate" type="application/atom+xml" title="netzfisch's RSS Feed" href="http://netzfisch.github.com/atom.xml">
+    <meta name="description" content="{% if page.meta-tag == 'global' %}{{ site.description }}{% else %}{{ page.content | strip_html | condense_spaces | truncate:155 }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.author }}'s RSS Feed" href="{{ site.url }}atom.xml">
 
     <!-- CSS Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen">

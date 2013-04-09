@@ -1,10 +1,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="{% if page.meta-tag == 'global' %}{{ site.description }}{% else %}{{ page.content | strip_html | condense_spaces | truncate:155 }}{% endif %}">
+page.meta-tag == 'global' or post.layout 
+    <meta name="description" content="{% if page.layout != 'post' %}{{ site.description }}{% else %}{{ page.content | strip_html | condense_spaces | truncate:155 }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.author }}'s RSS Feed" href="{{ site.url }}atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.author }}'s RSS Feed" href="/atom.xml">
 
     <!-- CSS Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen">

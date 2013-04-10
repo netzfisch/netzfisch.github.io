@@ -38,15 +38,22 @@
 	display: block;
 	margin-top: 10px;
       }
+      .post_navigation {
+	margin-top: 8px;
+	border-top: 1px solid grey;
+	padding-top: 5px;
+	padding-bottom: 5px;
+      }
       .post_tags > a {
 	.badge;
 	float: right;
 	margin-right: 3px;
       }
+      .share-container {
+	overflow: hidden;
+      }
       .share-button {
       	float: left;
         width: 100px;
-        height: 20px;
-        overflow: hidden;
-        border-left: solid 1px red;
+        height: 26px;
       }

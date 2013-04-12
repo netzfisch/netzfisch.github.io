@@ -18,13 +18,11 @@ sidebar_posts: related
   {% include widget_social-share.html %}
 
   <div class="post_navigation">
-    <hr />
     {% if page.previous.url %}
       <a class="pull-left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left"></i> Previous Post</a>
     {% endif %}
     {% if page.next.url %}
        <a class="pull-right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Post <i class="icon-arrow-right"></i></a>
     {% endif %}
-    <hr />
   </div>
 </div>

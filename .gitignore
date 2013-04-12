@@ -2,6 +2,9 @@
 _site/
 _site/*
 
+# don't show files with private concerns
+google*
+
 # tempory files/directory
 *~
 *.swp

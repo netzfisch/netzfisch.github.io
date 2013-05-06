@@ -12,7 +12,7 @@ Either just use [VIM](http://www.vim.org) on a local box or in mobile enviroment
 * then generate the site `$ jekyll` and
 * push to GitHub!
 
-Alternatively you could  edit directly at GitHub:
+Alternatively you could edit directly at GitHub:
 
 * than `$ git pull origin source`
 * compile `$ jekyll build` and

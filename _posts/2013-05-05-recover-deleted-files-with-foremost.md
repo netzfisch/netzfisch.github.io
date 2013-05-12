@@ -14,3 +14,5 @@ Ever **accidently deleted files** with `Shift + Del` or directly at the command 
     $ foremost -t pdf -i /dev/sda1 -T
     $ cat output/audit.txt
     $ ls -l output/pdf/
+
+That is it.

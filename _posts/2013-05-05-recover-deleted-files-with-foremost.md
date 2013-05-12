@@ -2,9 +2,9 @@
 layout:    post
 category:  linux
 tags:      application foremost photorec bash 2cent
-title:     Recover deleted files
+title:     Recover deleted files with foremost
 ---
-Ever **accidently deleted files** with `Shift + Del` or directly at the command line. Then **stop** any **further writings** to the disk and try the good old **command line programs foremost or photorec**. Both are at its best already installed, otherwise that is quickly done by
+Ever **accidently deleted files** with `Shift + Del` or directly at the command line, as I just did - **arrgh**!. Then **stop** any **further writings** to the hard disk and try the good old **command line programs foremost or photorec**. Both are at its best already installed, otherwise that it is quickly done by
 
     $ sudo apt-get install foremost testdisk
 

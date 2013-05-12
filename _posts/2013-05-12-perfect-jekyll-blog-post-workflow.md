@@ -9,7 +9,7 @@ title: Perfect Jekyll blogging workflow
 Either just use [VIM](http://www.vim.org) on a local box or in mobile enviroment a Chrome App, called 
 * ![markdown](https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fmarkdown-here%2Felifhakcjgalahccnjkneoccemfahfoa&ei=Vk9cUYSVDsjZswbR4YHAAw&usg=AFQjCNE9AjPvFKhon79znSJayV5tG-K4ug&sig2=VXKsp4HmOmzccK0S_bigpw&bvm=bv.44697112,d.Yms)
 * save the file to [DropBox](https://dropbox.com) or [GDrive](https://gdrive.com)
-* then generate the site `$ jekyll` and
+* then generate the site with `$ jekyll` and
 * push to GitHub!
 
 Alternatively you could edit directly at GitHub:

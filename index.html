@@ -3,11 +3,11 @@ layout:   default
 meta-tag: global
 title:    netzfisch's ...wikibrain and blogtaker
 ---
-{% for post in site.posts limit: 5 %}
+{% for post in site.posts limit: 10 %}
   <div class="post_excerpt">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <span class="label label-important pull-left">{{ post.date | date_to_long_string }}</span>
-    {{ post.content | truncatewords: 100 }}
+    {{ post.excerpt }} 
     <ul class="nav nav-pills pull-right">
       <li>
         <a href="{{ post.url }}"><i class="icon-arrow-right"></i> read more</a>

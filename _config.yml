@@ -1,26 +1,25 @@
 author:      netzfisch
 name:        harm
-title:       "netzfisch's ...wikibrain and blogtaker"
-url:         http://netzfisch.github.io/
-description: "some things that matter to me, mostly tech stuff: linux, ruby, rails ... open source, gagdgets and travel pics"
 email:       tweet@me
 twitter:     netzfisch
 github:      netzfisch
 gravatar_url: http://gravatar.com/avatar/859204385
 
-safe:        false 
-auto:        false
-server:      false
+title:       "netzfisch's ...wikibrain and blogtaker"
+url:         http://netzfisch.github.io/
+description: "some things that matter to me, mostly tech stuff: linux, ruby, rails ... open source, gagdgets and travel pics"
 
 # source:      ./
 # destination: ./_site
 plugins:     ./_plugins
 
+safe:        false 
 future:      false
 lsi:         false 
 pygments:    true
 markdown:    maruku
 permalink:   date
+#excerpt_separator: "\n\n"
 
 exclude:
   - Gemfile

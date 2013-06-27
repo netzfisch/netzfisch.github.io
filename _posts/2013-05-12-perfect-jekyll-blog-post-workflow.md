@@ -4,7 +4,8 @@ category: tools
 tags: howto application jekyll markdown workflow
 title: Perfect Jekyll blogging workflow
 ---
-[Lately] ({% post_url 2013-03-24-jekyll-jumpstart %}) I switched back to a **static blog generation** - enjoying a **higher** blog **post frequence**. This are my **perfect blogging workflow** alternatives.
+
+[Lately](/ruby/2013/03/24/jekyll-jumpstart.html) I switched back to a **static blog generation** - enjoying a **higher** blog **post frequence**. This are my **perfect blogging workflow** alternatives.
 
 Either just use [VIM](http://www.vim.org) on a local box or in mobile enviroment take a Chrome-App - called [Textdown](https://chrome.google.com/webstore/detail/textdown/efalomlklhakojjbdfehfkgoicablooc):
 

@@ -2,14 +2,14 @@
 layout: post
 category: tools
 tags: dropbox git github mashup
-title: Dropbox as 'private' github repository
+title: Dropbox as "private" github repository
 ---
-If you need a **private repository** located in the cloud, **dropbox and git** are your friends! Basically you just need 
+If you need a **private cloud repository** for free, **dropbox and git** are your friends! Basically you just need 
 
-* to create a bare git repository within the dropbox folder.
+* to create a bare git repository within the dropbox folder!
 * Than hook up your new bare repo as an upstream to your existing one.
 
-and that´s it:
+### Setup
 
     $ mkdir dropbox/git
     $ cd dropbox/git
@@ -17,8 +17,8 @@ and that´s it:
     $ cd ~/local-repo
     $ git remote add dropbox ~/dropbox/git/cloud-repo.git
 
-#### Usage
+### Usage
 
-Than do `$ git push dropbox master` and dropbox will take care for you via cloud syncronization.
+Just do a `$ git push dropbox master` and dropbox will take care for you via cloud syncronization.
 
-Check out the repo by `$ git clone ~/dropbox/git/cloud-repo.git` from any client with dropbox **syncronization**!
+Check out the repo by `$ git clone ~/dropbox/git/cloud-repo.git` from any client with **dropbox syncronization**!

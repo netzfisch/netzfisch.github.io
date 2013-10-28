@@ -19,7 +19,7 @@ While adding the `-s` parameter gives you additionaly synonyms:
     
 the talk `-t` switch even dares you a voice impression of chinese:
 
-    $ termit de ch "netzfisch" -t
+    $ termit de zh "netzfisch" -t
     => 鱼网
 
 This is a damn **simple, helpful and a defintely cool tool mashup**!

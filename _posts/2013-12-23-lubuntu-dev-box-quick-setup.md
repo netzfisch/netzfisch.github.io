@@ -41,7 +41,7 @@ Finally install [rvm][9] and some often used gems
 
 Happy hacking!
 
-  [1]: http://thinkwiki.de/T41
+[1]: http://thinkwiki.de/T41
   [2]: https://github.com/netzfisch
   [3]: http://lubuntu.net
   [4]: https://help.ubuntu.com/community/BackupYourSystem/TAR

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>netzfisch's ...wikibrain and blogtaker</title>
+  <link href="http://netzfisch.github.io//atom.xml" rel="self"/>
+  <link href="http://netzfisch.github.io/"/>
+  <updated>2013-12-24T00:38:44+01:00</updated>
+  <id>http://netzfisch.github.io/</id>
+  <author>
+    <name>netzfisch</name>
+    <email>tweet@me</email>
+  </author>
+  <rights>Copyright (c) netzfisch</rights>
+
+  
+  <entry>
+    <title>lubuntu dev box quick setup</title>
+    <link href="http://netzfisch.github.io//linux/2013/12/23/lubuntu-dev-box-quick-setup.html"/>
+    <updated>2013-12-23T00:00:00+01:00</updated>
+    <id>http://netzfisch.github.io//linux/2013/12/23/lubuntu-dev-box-quick-setup</id>
+    <content type="html">&lt;p&gt;After years staying with my old laptop, downgrading the window manager from GNOME 3 back to GNOME 2 and finally to &lt;strong&gt;LXDE&lt;/strong&gt;, to keep decent performance - while upgrading to new distro-releases, finally the point came: I had to change my beloved companion &lt;strong&gt;&lt;a href=&quot;http://thinkwiki.de/T41&quot;&gt;IBM ThinkPad T41&lt;/a&gt;&lt;/strong&gt;! So, I sad good bye ;-( and hello :-) to a more powerful one!&lt;/p&gt;
+
+&lt;p&gt;But can you remember, what you installed in the past years, what to keep - what to move? It took me a while to get the same working state I had before, therefore I summarized the accomplished steps and put some love in my &lt;strong&gt;dotfile organization&lt;/strong&gt; at &lt;a href=&quot;https://github.com/netzfisch&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the last years, I got used to a fast and lightweight operating system, so I keep on using &lt;a href=&quot;http://lubuntu.net&quot;&gt;lubuntu&lt;/a&gt;, as the core is based on Ubuntu, focuses on speed and energy-efficiency, and uses the minimal desktop LXDE. Perfect conditions to stay the next decade with my new gadget - hopefully.&lt;/p&gt;
+
+&lt;p&gt;So get your iso-image and copy it to a the USB-stick. Before installing the base system, be aware to change your BIOS boot order at startup via &lt;code&gt;&amp;lt;F1&amp;gt;&lt;/code&gt; (persistent) or hit &lt;code&gt;&amp;lt;F12&amp;gt;&lt;/code&gt; to choose your temporary boot device . While moving through the installer &lt;strong&gt;make sure&lt;/strong&gt; to choose the &lt;strong&gt;system encryption&lt;/strong&gt; option or encrypt at least your home directory!&lt;/p&gt;
+
+&lt;p&gt;Than backup your old home directory, see using &lt;a href=&quot;https://help.ubuntu.com/community/BackupYourSystem/TAR&quot;&gt;tar&lt;/a&gt; details here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ tar -cvpzf backup-home.tar --exclude=~/backup-home.tar --one-file-system /home/YourUserName&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;extract your backup on the new box&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ tar -xvpzf backup-home.tar -C /home/YourUserName/backup&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and copy your .ssh-folder from the backup directory to the root level of your home directory. Make sure only &lt;strong&gt;YOU&lt;/strong&gt; can read/write to it &lt;code&gt;chmod -R 600 ~/.ssh&lt;/code&gt; !&lt;/p&gt;
+
+&lt;p&gt;Than spice up your system with the &lt;strong&gt;essential terminal, and dev tools&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$  sudo apt-get install aptitude curl git git-man gitg gitk mc vim vim-doc xfce4-terminal zsh zsh-doc&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and some nice desktop apps:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$  bogofilter chromium-browser dropbox geary gimp gkrellm gwakeonlan lubuntu-restricted-extras keepass2 shutter&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Switch your shell &lt;code&gt;$ chsh -s /bin/zsh&lt;/code&gt;, clone, and install your &lt;strong&gt;dotfiles&lt;/strong&gt;, mine are &lt;a href=&quot;https://github.com/netzfisch/dotfiles&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Integrate your local NAS by changing &lt;code&gt;/etc/fstab&lt;/code&gt; according to the hints at the &lt;a href=&quot;https://wiki.ubuntu.com/MountWindowsSharesPermanently&quot;&gt;ubuntu wiki&lt;/a&gt; and support your work flow by a music streaming service. I add the &lt;a href=&quot;http://www.google.com/linuxrepositories/&quot;&gt;google Linux Software Repositories&lt;/a&gt;, download and install the &lt;strong&gt;&lt;a href=&quot;https://play.google.com/music/listen#/manager&quot;&gt;google-music-manager&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally install &lt;a href=&quot;https://rvm.io/&quot;&gt;rvm&lt;/a&gt; and some often used gems&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install jekyll termit&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Happy hacking!&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Translating besides VIM in your terminal - get ready for Termit!</title>
+    <link href="http://netzfisch.github.io//tools/2013/10/28/translating-besides-vim-in-your-terminal-get-ready-for-termit.html"/>
+    <updated>2013-10-28T00:00:00+01:00</updated>
+    <id>http://netzfisch.github.io//tools/2013/10/28/translating-besides-vim-in-your-terminal-get-ready-for-termit</id>
+    <content type="html">&lt;p&gt;Regulary looking for a certain englisch word, verb or noun, which really fits your model methods - database symantics? Until last week I just openend annother browser tab an asked &lt;a href=&quot;http://dict.cc&quot;&gt;dict.cc&lt;/a&gt; or similar services &lt;/p&gt;
+
+&lt;p&gt;Since than I do &lt;strong&gt;&lt;a href=&quot;htpps://github.com/pawurb/termit&quot;&gt;Termit&lt;/a&gt;&lt;/strong&gt;, which basically is an easy way/ shortcut to use &lt;a href=&quot;https://translate.google.com&quot;&gt;Google Translate&lt;/a&gt; directly in your terminal.&lt;/p&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;While adding the &lt;code&gt;-s&lt;/code&gt; parameter gives you additionaly synonyms:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ termit de en &amp;quot;anpassen&amp;quot; -s
+=&amp;gt; adjust
+=&amp;gt; Synonyms: adjust, adapt, customize, fit, suit, accommodate, tune, readjust, blend in, fit on, bring into line&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the talk &lt;code&gt;-t&lt;/code&gt; switch even dares you a voice impression of chinese:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ termit de zh &amp;quot;netzfisch&amp;quot; -t
+=&amp;gt; 鱼网&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a damn &lt;strong&gt;simple, helpful and a defintely cool tool mashup&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install termit
+$ sudo apt-get install mpg123&lt;/code&gt;&lt;/pre&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Dropbox as "private" github repository</title>
+    <link href="http://netzfisch.github.io//tools/2013/08/26/using-dropbox-as-private-github-repository.html"/>
+    <updated>2013-08-26T00:00:00+02:00</updated>
+    <id>http://netzfisch.github.io//tools/2013/08/26/using-dropbox-as-private-github-repository</id>
+    <content type="html">&lt;p&gt;If you need a &lt;strong&gt;private cloud repository&lt;/strong&gt; for free, &lt;strong&gt;dropbox and git&lt;/strong&gt; are your friends! Basically you just need&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to create a bare git repository within the dropbox folder!&lt;/li&gt;
+
+&lt;li&gt;Than hook up your new bare repo as an upstream to your existing one.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir dropbox/git
+$ cd dropbox/git
+$ git init --bare cloud-repo.git
+$ cd ~/local-repo
+$ git remote add dropbox ~/dropbox/git/cloud-repo.git&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;Just do a &lt;code&gt;$ git push dropbox master&lt;/code&gt; and dropbox will take care for you via cloud syncronization.&lt;/p&gt;
+
+&lt;p&gt;Check out the repo by &lt;code&gt;$ git clone ~/dropbox/git/cloud-repo.git&lt;/code&gt; from any client with &lt;strong&gt;dropbox syncronization&lt;/strong&gt;!&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Testing vs. stubbing pagination of will_paginate gem</title>
+    <link href="http://netzfisch.github.io//ruby/2013/06/27/testing-vs-stubbing-pagination-of-will_paginate-gem.html"/>
+    <updated>2013-06-27T00:00:00+02:00</updated>
+    <id>http://netzfisch.github.io//ruby/2013/06/27/testing-vs-stubbing-pagination-of-will_paginate-gem</id>
+    <content type="html">&lt;p&gt;I used a “rspec view” as customer acceptance test. My intention was not to test the “will_paginate” gem code, but to assure the customer, that there is a “pagination bar”!&lt;/p&gt;
+
+&lt;p&gt;At the beginning I tried to stub the pagination method like that&lt;/p&gt;
+&lt;script src='https://gist.github.com/5605721.js'&gt;&lt;![CDATA[ ]]&gt;&lt;/script&gt;
+&lt;p&gt;which was not working and did not make sense in a view spec (vs. a model spec). Thanks to hints from &lt;a href=&quot;1&quot;&gt;David&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“First, yours stubs :will_paginate. You definitely don’t want to do that if your specifying outcomes of will_paginate.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;and &lt;a href=&quot;2&quot;&gt;Mislav&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“The way to get pagination in the view is to create a fake paginated collection that appears to have more than 1 page. You only have 3 records, and with the default per_page value this is only 1 page of data.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I changed the spec to&lt;/p&gt;
+&lt;script src='https://gist.github.com/5605792.js'&gt;&lt;![CDATA[ ]]&gt;&lt;/script&gt;
+&lt;p&gt;which did the trick and worked perfectly.&lt;/p&gt;
+
+&lt;p&gt;Find here the full &lt;a href=&quot;1&quot;&gt;rspec&lt;/a&gt; and &lt;a href=&quot;2&quot;&gt;will_paginate&lt;/a&gt; threads! Next time I probably would better use rspec features for that!&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Perfect Jekyll blogging workflow</title>
+    <link href="http://netzfisch.github.io//tools/2013/05/12/perfect-jekyll-blog-post-workflow.html"/>
+    <updated>2013-05-12T00:00:00+02:00</updated>
+    <id>http://netzfisch.github.io//tools/2013/05/12/perfect-jekyll-blog-post-workflow</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;/ruby/2013/03/24/jekyll-jumpstart.html&quot;&gt;Lately&lt;/a&gt; I switched back to a &lt;strong&gt;static blog generation&lt;/strong&gt; - enjoying a &lt;strong&gt;higher&lt;/strong&gt; blog &lt;strong&gt;post frequence&lt;/strong&gt;. This are my &lt;strong&gt;perfect blogging workflow&lt;/strong&gt; alternatives.&lt;/p&gt;
+
+&lt;p&gt;Either just use &lt;a href=&quot;http://www.vim.org&quot;&gt;VIM&lt;/a&gt; on a local box or in mobile enviroment take a Chrome-App - called &lt;a href=&quot;https://chrome.google.com/webstore/detail/textdown/efalomlklhakojjbdfehfkgoicablooc&quot;&gt;Textdown&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;save the file to &lt;a href=&quot;https://dropbox.com&quot;&gt;DropBox&lt;/a&gt; or &lt;a href=&quot;https://gdrive.com&quot;&gt;GDrive&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;then generate the site with &lt;code&gt;$ jekyll build&lt;/code&gt; and&lt;/li&gt;
+
+&lt;li&gt;push to GitHub!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Alternatively you could edit directly at GitHub:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;than &lt;code&gt;$ git pull origin source&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;compile &lt;code&gt;$ jekyll build&lt;/code&gt; and&lt;/li&gt;
+
+&lt;li&gt;push &lt;code&gt;$ git push origin master&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Recover deleted files with foremost</title>
+    <link href="http://netzfisch.github.io//linux/2013/05/05/recover-deleted-files-with-foremost.html"/>
+    <updated>2013-05-05T00:00:00+02:00</updated>
+    <id>http://netzfisch.github.io//linux/2013/05/05/recover-deleted-files-with-foremost</id>
+    <content type="html">&lt;p&gt;Ever &lt;strong&gt;accidently deleted files&lt;/strong&gt; with &lt;code&gt;Shift + Del&lt;/code&gt; or directly at the command line, as I just did - &lt;strong&gt;arrgh&lt;/strong&gt;! Then &lt;strong&gt;stop&lt;/strong&gt; any &lt;strong&gt;further writings&lt;/strong&gt; to the hard disk and try the good old &lt;strong&gt;command line programs foremost or photorec&lt;/strong&gt;. Both are at its best already installed, otherwise that it is quickly done by&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install foremost testdisk&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;photorec&lt;/strong&gt; is included in the testdisk utility and a more &lt;strong&gt;guided solution&lt;/strong&gt;, although still running in the bash. While &lt;strong&gt;foremost&lt;/strong&gt; works straight foward at the command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ man foremost
+$ foremost -t pdf -i /dev/sda1 -T
+$ cat output/audit.txt
+$ ls -l output/pdf/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is it.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Sorting collections in Liquid templates</title>
+    <link href="http://netzfisch.github.io//ruby/2013/04/03/sorting-collections-in-liquid-templates.html"/>
+    <updated>2013-04-03T00:00:00+02:00</updated>
+    <id>http://netzfisch.github.io//ruby/2013/04/03/sorting-collections-in-liquid-templates</id>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Sorting in Jekyll&lt;/strong&gt; looks quiet simple with standard &lt;a href=&quot;https://github.com/Shopify/liquid/wiki/Liquid-for-Designers&quot;&gt;Liquid Filters&lt;/a&gt; &lt;code&gt;sort&lt;/code&gt;, but it did not worked out.&lt;/p&gt;
+
+&lt;p&gt;Because &lt;strong&gt;Liquid&lt;/strong&gt; converts ruby hashes to arrays, e.g the Jekyll variables beneath &lt;em&gt;site&lt;/em&gt;, like &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt; (e.g. site.tags):&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;tag&lt;/span&gt; &lt;span class='k'&gt;in&lt;/span&gt; &lt;span class='n'&gt;site&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;tags&lt;/span&gt; 
+  &lt;span class='o'&gt;&amp;lt;&lt;/span&gt;&lt;span class='n'&gt;li&lt;/span&gt;&lt;span class='o'&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class='sr'&gt;/li&amp;gt;&lt;/span&gt;
+&lt;span class='sr'&gt;endfor &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;e.g. &lt;em&gt;site.tags&lt;/em&gt; will be converted to an array of tuples in which [0] refers to the key and [1] to the list of values. &lt;strong&gt;Without monkey patching&lt;/strong&gt; you can not sort the tuples alphabetically by the key [0] of each of them - very sad!&lt;/p&gt;
+
+&lt;p&gt;There’s a pull request that adds it at &lt;a href=&quot;https://github.com/Shopify/liquid/pull/101&quot;&gt;Shopify/liquid#101&lt;/a&gt;, but it looks like that’s not been merged (see also &lt;a href=&quot;https://github.com/mojombo/jekyll/issues/766&quot;&gt;mojombo/jekyll#766&lt;/a&gt;) ;-(&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>RSS Autodiscovery</title>
+    <link href="http://netzfisch.github.io//web/2013/04/03/rss-autodiscovery.html"/>
+    <updated>2013-04-03T00:00:00+02:00</updated>
+    <id>http://netzfisch.github.io//web/2013/04/03/rss-autodiscovery</id>
+    <content type="html">&lt;p&gt;Ever thought about the nifty RSS-symbol in the browsers adress bar and how to get it there? Quiet easy - just put the the following meta-tag into the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of your html-site:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;link&lt;/span&gt; &lt;span class='na'&gt;rel=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;alternate&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;application/atom+xml&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;title=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Example RSS Feed&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;http://www.example.com/xml/atom.xml&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://dev.chromium.org/user-experience/feed-subscriptions&quot;&gt;Chromium Reference&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.rssboard.org/rss-autodiscovery&quot;&gt;RSS Advisory Board&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Easy favicon creation</title>
+    <link href="http://netzfisch.github.io//linux/2013/03/30/favicon-creation.html"/>
+    <updated>2013-03-30T00:00:00+01:00</updated>
+    <id>http://netzfisch.github.io//linux/2013/03/30/favicon-creation</id>
+    <content type="html">&lt;p&gt;In the old days, you could resize &lt;strong&gt;favicons&lt;/strong&gt; just to &lt;strong&gt;16x16 pixel&lt;/strong&gt;, but todays browsers support up to &lt;strong&gt;64x64&lt;/strong&gt; pixel and also the &lt;strong&gt;royalty free .png-format&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Easy come:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install imagemagick
+$ convert input.png -colors 256 -resize 64x64 favicon.ico&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;easy go!&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Deploying Jekyll with plugins to GitHub Pages</title>
+    <link href="http://netzfisch.github.io//ruby/2013/03/27/deploying-jekyll-to-github-pages.html"/>
+    <updated>2013-03-27T00:00:00+01:00</updated>
+    <id>http://netzfisch.github.io//ruby/2013/03/27/deploying-jekyll-to-github-pages</id>
+    <content type="html">&lt;p&gt;… was not that easy, as I thought in my &lt;a href=&quot;/ruby/2013/03/24/jekyll-jumpstart.html&quot;&gt;last post&lt;/a&gt;, because &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; do &lt;strong&gt;not allow any custom plugins!&lt;/strong&gt;. So I came up with the following strategy also used by &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; and well described from &lt;a href=&quot;http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html&quot;&gt;Ixti&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;First create a scecond branch called e.g. &lt;em&gt;source&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;and make it default at &lt;a href=&quot;http://github.com/&quot;&gt;GitHub&lt;/a&gt; Repository.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That way you can compile locally and publish your site to the master branch, which leaves you version control under the source branch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html&quot;&gt;Ixti&lt;/a&gt; has also a nice implementation for publishing, so you can do &lt;code&gt;$ rake publish&lt;/code&gt;.&lt;/p&gt;</content>
+  </entry>
+   
+</feed>

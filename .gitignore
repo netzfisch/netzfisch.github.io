@@ -1,7 +1,3 @@
-# because auf source vs. master branch
-_site/
-_site/*
-
 # don't show files with private concerns
 google*
 

@@ -1,3 +1,6 @@
+# don't track '_site' directory
+_site
+
 # don't show files with private concerns
 google*
 

@@ -1,3 +1,17 @@
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+encoding: UTF-8
+
+future:      false
+lsi:         false
+pygments:    true
+
+permalink:   date
+markdown:    maruku
+excerpt_separator: "\n\n"
+
 author:      netzfisch
 name:        harm
 email:       tweet@me
@@ -5,23 +19,6 @@ twitter:     netzfisch
 github:      netzfisch
 gravatar_url: http://gravatar.com/avatar/859204385
 
-title:       "netzfisch's ...wikibrain and blogtaker"
 url:         http://netzfisch.github.io/
+title:       "netzfisch's ...wikibrain and blogtaker"
 description: "some things that matter to me, mostly tech stuff: linux, ruby, rails ... open source, gagdgets and travel pics"
-
-# source:      ./
-# destination: ./_site
-plugins:     ./_plugins
-
-safe:        false 
-future:      false
-lsi:         false 
-pygments:    true
-markdown:    maruku
-permalink:   date
-#excerpt_separator: "\n\n"
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile

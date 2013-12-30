@@ -9,14 +9,16 @@ sidebar_posts: related
     {{ content }}
   </div>    
 
+
   <div class="post_tags">
     {% for tag in page.tags %}
       <a href="/tags.html#{{ tag }}" rel="tag" class="badge">{{ tag }}</a>
     {% endfor %}
   </div>
-
   {% include widget_social-share.html %}
 
+  <hr />
+  {% include widget_comment-box.html %}
   <div class="post_navigation">
     {% if page.previous.url %}
       <a class="pull-left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left"></i> Previous Post</a>

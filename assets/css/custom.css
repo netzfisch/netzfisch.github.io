@@ -1,0 +1,51 @@
+/* LESS customisation of bootstrap, */
+/* see 'assets/config.json     */
+body {
+  background-image: url('/assets/img/canvas-texture.png');
+}
+/* Custom container for smaller layout */
+.container {
+  margin: 0 auto;
+  max-width: 840px;
+  padding: 20px 20px 30px;
+  background-color: white;
+  border-left: 4px solid lightGrey;
+  border-right: 4px solid lightGrey;
+}
+.container > hr {
+  margin: 30px 0;
+  border-top: 3px solid #eeeeee;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: white;
+}
+.post_date {
+  float: left;
+  margin-right: 8px;
+  padding: 12px 8px;
+  font-size: 100%;
+}
+.post_tag > a {
+  float: right;
+  margin-right: 3px;
+}
+.post_navigation {
+  margin-top: 15px;
+  border-top: 2px solid lightgrey;
+}
+.share-container {
+  overflow: hidden;
+}
+.share-button {
+  float: left;
+  width: 100px;
+  height: 26px;
+}
+.well {
+  background: white
+}
+h3 > a {
+    color: grey;
+}

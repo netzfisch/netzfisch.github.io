@@ -4,29 +4,27 @@
     {% include header.html %}
   </head>
   <body>
-    <div class="container-narrow">
+    <div class="container">
       {% include navigation.html %}
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span8">
-            {{ content }}
-          </div>
+      <div class="row">
+        <div class="col-sm-8">
+          {{ content }}
+        </div>
 
-          <div class="span4">
-            {% include sidebar_cheat-sheets.html %}
+        <div class="col-sm-4">
+          {% include sidebar_cheat-sheets.html %}
 
-            {% if page.sidebar_posts == 'related' %}
-              {% include sidebar_related-posts.html %}
-            {% else %}
-              {% include sidebar_recent-posts.html %}
-            {% endif %}
+          {% if page.sidebar_posts == 'related' %}
+            {% include sidebar_related-posts.html %}
+          {% else %}
+            {% include sidebar_recent-posts.html %}
+          {% endif %}
 
-            {% include sidebar_recent-tweets.html %}
-            {% include sidebar_social-bar.html %}
-          </div>
-        </div><!--/row-fluid-->
-      </div><!--/container-fluid-->
+          {% include sidebar_recent-tweets.html %}
+          {% include sidebar_social-bar.html %}
+        </div>
+      </div><!--/row-->
       {% include footer.html %}
-    </div><!--/container-narrow-->
+    </div><!--/container-->
   </body>
 </html>

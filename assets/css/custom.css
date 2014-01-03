@@ -10,7 +10,7 @@ body a:hover {
 .container {
   margin: 0 auto;
   max-width: 840px;
-  padding: 20px 20px 30px;
+  padding: 20px 20px 10px;
   background-color: white;
   border-left: 4px solid lightGrey;
   border-right: 4px solid lightGrey;
@@ -25,12 +25,14 @@ body a:hover {
   background-color: white;
 }
 .post_date {
+  .label .label-danger; /* not working, have to use less.js - see lesscss.org */
   float: left;
   margin-right: 8px;
   padding: 12px 8px;
   font-size: 100%;
 }
 .post_tag > a {
+  .badge; /* not working, have to use less.js - see lesscss.org */
   float: right;
   margin-right: 3px;
 }
@@ -51,4 +53,9 @@ body a:hover {
 }
 h3 {
   color: grey;
+}
+.footer > p {
+  .text-muted; /* not working, have to use less.js - see lesscss.org */
+  text-align: center;
+  font-size: 14px;
 }

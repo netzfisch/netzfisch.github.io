@@ -3,6 +3,9 @@
 body {
   background-image: url('/assets/img/canvas-texture.png');
 }
+body a:hover {
+  text-decoration: none;
+}
 /* Custom container for smaller layout */
 .container {
   margin: 0 auto;
@@ -46,6 +49,6 @@ body {
 .well {
   background: white
 }
-h3 > a {
-    color: grey;
+h3 {
+  color: grey;
 }

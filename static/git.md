@@ -7,12 +7,20 @@ title:     git cheat sheet, things to remember
 
 I'm not coding that often, but when the exception happens I often end up with a 'task' and the knowledge that there is a better way to handle the source code - but I can't remember!
 
-Therefore I note here some **plain and ordinarily commands, don't expect fancy tricks**, for details you better head to the official **[git reference][1]**. Some time ago I posted **[git basics][2]** to get started, but it should be still valid.
+Therefore I note here some **plain and ordinarily commands, but don't expect fancy tricks** as it is for me more a mnemonic. For details you better head to the official **[git reference][1]**. Some time ago I posted also some **[git basics][2]** to get started, which should be still valid!
 
-#### working with staging area
+#### branching and merging
 
-    $ git stash # stash all actual changes 'away'!
-    $ git pop   # apply the stashed changes again
+    $ git stash        # save local modifications to a new stash
+    $ git reset --hard # revert to previous state/head
+    $ git stash pop    # apply the stashed changes
+
+### patching
+
+    $ git -n cherrypick master~1 master
+
+Apply the changes introduced by the second last and last commits pointed to by
+master, but do not create any commit with these changes.
 
 #### add/change the last commit
 

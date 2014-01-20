@@ -12,8 +12,6 @@
         </div>
 
         <div class="col-sm-4">
-          {% include sidebar_cheat-sheets.html %}
-
           {% if page.sidebar_posts == 'related' %}
             {% include sidebar_related-posts.html %}
           {% else %}
@@ -21,6 +19,7 @@
           {% endif %}
 
           {% include sidebar_recent-tweets.html %}
+          {% include sidebar_cheat-sheets.html %}
           {% include sidebar_social-bar.html %}
         </div>
       </div><!--/row-->

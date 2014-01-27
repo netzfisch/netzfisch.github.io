@@ -1,7 +1,12 @@
 /* LESS customisation of bootstrap, */
 /* see 'assets/config.json     */
 body {
-  background-image: url('/assets/img/canvas-texture.png');
+  /* background-image: url('/assets/img/canvas-texture.png'); */
+  background: url('/assets/img/elbe.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body a:hover {
   text-decoration: none;
@@ -9,10 +14,10 @@ body a:hover {
 /* Custom container for smaller layout */
 .container {
   max-width: 840px;
-  margin: 20px auto;
+  margin: 40px auto;
   border: 4px solid lightGrey;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.80); /* white; */
   padding: 20px 20px 10px;
 }
 .container > hr {

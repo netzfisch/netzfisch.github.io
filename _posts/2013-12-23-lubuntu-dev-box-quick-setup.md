@@ -2,8 +2,7 @@
 layout:    post
 category:  linux
 tags:      lubuntu install backup tar dotfiles ruby
-title:     Updated - lubuntu dev box quick setup
-date:      2014-01-24
+title:     Lubuntu dev box quick setup
 ---
 After years staying with my old laptop, downgrading the window manager from GNOME 3 back to GNOME 2 and finally to **LXDE**, to keep decent performance - while upgrading to new distro-releases, finally the point came: I had to change my beloved companion **[IBM ThinkPad T41][1]**! So, I sad good bye ;-( and hello :-) to a more powerful one!
 
@@ -41,7 +40,7 @@ Afterwards update and spice up your system with the **essential terminal, and de
 
 and some useful desktop apps:
 
-    $  bogofilter chromium-browser dropbox geary gimp gkrellm gwakeonlan lubuntu-restricted-extras keepass2 shutter
+    $  bogofilter audacity chromium-browser dropbox geary gimp gkrellm gwakeonlan keepassX lubuntu-restricted-extras shutter
 
 Switch your shell `$ chsh -s /bin/zsh`, clone, and install your **dotfiles**, mine are [here][8].
 
@@ -52,39 +51,6 @@ Finally install ruby via [rvm][12] or [rbenv][13] and commonly used gems, e.g.
     $ gem install jekyll rubocop termit
 
 Happy hacking!
-
-### UPDATE, 24th of January 2014
-
-Meanwhile I run in some minor problems, which can be solved as follwed
-
-**Autostart of dropbox** does not work out of the box in lubuntut. Therefore just add it manually to the autostart group: `echo "dropbox start -i" >> ~/.config/lxsession/Lubuntu/autostart`
-
-I forgot a tool for **automated, regular backups**: `sudo apt-get install deja-dup`, similar to _Apples Time Machine_.
-
-**Auto mounting the NAS** broke of with error message like
-
-  * _mount error (101): Network is unreachable_ and
-  * _mountall: mount /home/username/mountpoint [process ID] brach mit dem Status 32 ab_
-
-This can happen if you use a **ssd hard disk**, which is much faster and tries to mount the NAS though networking is not ready yet. Therefore I added to the fstab the options `noauto,user`, so the __owner__ can mount after login manually
-
-{% highlight linux-config %}
-# mount Public NAS folder, like shared Music
-//NAS/public/music /home/harm/Music cifs noauto,user,guest,uid=1000,iocharset=utf8 0 0
-
-# mount Personal NAS folder, with the username
-//NAS/username /home/harm/Archive cifs noauto,user,credentials=/home/username/.smbcredentials,iocharset=utf8,sec=ntlm 0 0
-{% endhighlight %}
-
-Alternatively use [autofs][14] or use a script like this
-
-{% highlight bash %}
-#! /bin/sh
-mount <Mountpunkt1>
-mount <Mountpunkt2>
-{% endhighlight %}
-
-Then `sudo chmod +x <Skript>` and start it also via the autostart group.
 
 [1]: http://thinkwiki.de/T41
   [2]: https://github.com/netzfisch/dotfiles
@@ -99,4 +65,3 @@ Then `sudo chmod +x <Skript>` and start it also via the autostart group.
   [11]: https://play.google.com/music/listen#/manager
   [12]: https://rvm.io
   [13]: https://github.com/sstephenson/rbenv
-  [14]: https://help.ubuntu.com/community/Autofs

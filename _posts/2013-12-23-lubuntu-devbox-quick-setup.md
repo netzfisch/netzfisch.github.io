@@ -2,7 +2,7 @@
 layout:    post
 category:  linux
 tags:      lubuntu install backup tar dotfiles ruby
-title:     Lubuntu dev box quick setup
+title:     Lubuntu devbox quick setup
 ---
 After years staying with my old laptop, downgrading the window manager from GNOME 3 back to GNOME 2 and finally to **LXDE**, to keep decent performance - while upgrading to new distro-releases, finally the point came: I had to change my beloved companion **[IBM ThinkPad T41][1]**! So, I sad good bye ;-( and hello :-) to a more powerful one!
 

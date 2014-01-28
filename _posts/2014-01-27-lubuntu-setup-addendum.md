@@ -4,7 +4,7 @@ category:  linux
 tags:      lubuntu install backup nas
 title:     Lubuntu setup - addendum
 ---
-Meanwhile I run in some minor problems, which can be solved easily. So the **autostart** function of **dropbox** does not work out of the box in lubuntu. Therefore just add it manually to the autostart group:
+After my last [lubuntu post][1] I run in some minor problems, which can be solved easily. For example the **autostart** function of **dropbox** does not work out of the box in lubuntu 13.10. Therefore add it manually to the autostart group:
 
 `echo "dropbox start -i" >> ~/.config/lxsession/Lubuntu/autostart`
 
@@ -25,7 +25,7 @@ This can happen if you use a **ssd hard disk**, which is much faster and tries t
 //NAS/username /home/username/Archive cifs noauto,user,credentials=/home/username/.smbcredentials,iocharset=utf8,sec=ntlm 0 0
 {% endhighlight %}
 
-Alternatively use [autofs][1] or use a script like this
+Alternatively use [autofs][2] or use a script like this
 
 {% highlight bash %}
 #! /bin/sh
@@ -35,4 +35,5 @@ mount <Mountpunkt2>
 
 Then `sudo chmod +x <Skript>` and start it also via the autostart group.
 
-  [1]: https://help.ubuntu.com/community/Autofs
+[1]: {% post_url 2013-12-23-lubuntu-devbox-quick-setup %}
+[2]: https://help.ubuntu.com/community/Autofs

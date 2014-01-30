@@ -1,6 +1,7 @@
 /* LESS customisation of bootstrap, */
 /* see 'assets/config.json     */
 body {
+  font-family: 'Droid Serif', serif;
   /* background-image: url('/assets/img/canvas-texture.png'); */
   background: url('/assets/img/elbe.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;

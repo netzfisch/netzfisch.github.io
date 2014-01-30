@@ -1,4 +1,4 @@
-/* LESS customisation of bootstrap, */
+/* SASS customisation of bootstrap, */
 /* see 'assets/config.json     */
 body {
   font-family: 'Droid Serif', serif;
@@ -37,7 +37,7 @@ body a:hover {
   border-bottom: 2px solid lightgrey;
 }
 .post_date {
-  .label .label-danger; /* not working, have to use less.js - see lesscss.org */
+  .label .label-danger; /* not working, have to use sass gem - see sass-lang.com */
   float: left;
   margin-right: 8px;
   padding: 12px 8px;
@@ -55,7 +55,7 @@ body a:hover {
   margin: 0 0 5px;
 }
 .post_tag > a {
-  .badge; /* not working, have to use less.js - see lesscss.org */
+  .badge; /* not working, have to use sass gem - see sass-lang.com */
   float: right;
   margin-right: 3px;
 }
@@ -78,7 +78,7 @@ h3 {
   color: grey;
 }
 .footer > p {
-  .text-muted; /* not working, have to use less.js - see lesscss.org */
+  .text-muted; /* not working, have to use sass gem - see sass-lang.com */
   text-align: center;
   font-size: 14px;
 }

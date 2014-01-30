@@ -31,12 +31,27 @@ body a:hover {
   text-decoration: none;
   background-color: white;
 }
+.post_excerpt {
+  display: inline-block;
+  border-bottom: 2px solid lightgrey;
+}
 .post_date {
   .label .label-danger; /* not working, have to use less.js - see lesscss.org */
   float: left;
   margin-right: 8px;
   padding: 12px 8px;
   font-size: 100%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 3px;
+  background-color: #d9534f;
+}
+.post_more {
+  float: right;
+  margin: 0 0 5px;
 }
 .post_tag > a {
   .badge; /* not working, have to use less.js - see lesscss.org */
@@ -67,7 +82,8 @@ h3 {
   font-size: 14px;
 }
 /* Responsive customisations */
-@media (min-width: 768px)
-.container {
-  margin: 40px auto;
+@media (min-width: 992px) {
+  .container {
+    margin: 40px auto;
+  }
 }

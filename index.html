@@ -3,16 +3,15 @@ layout:   default
 meta-tag: global
 title:    netzfisch's ...wikibrain and blogtaker
 ---
-{% for post in site.posts limit: 4 %}
+{% for post in site.posts limit: 5 %}
   <div class="post_excerpt">
     <h3>{{ post.title }}</h3>
-    <span class="post_date label label-danger">{{ post.date | date_to_long_string }}</span>
+    <span class="post_date ">
+      {{ post.date | date_to_long_string }}
+    </span>
     {{ post.excerpt }}
-    <ul class="pager">
-      <li class="next">
-        <a href="{{ post.url }}"><i class="icon-arrow-right"></i> read more</a>
-      </li>
-    </ul>
+    <span class="post_more">
+      <a href="{{ post.url }}"><i class="glyphicon glyphicon-arrow-right"></i> read more</a>
+    </span>
   </div>
-  <hr />
 {% endfor %}

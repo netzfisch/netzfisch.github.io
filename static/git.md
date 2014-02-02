@@ -11,39 +11,42 @@ Therefore I note here some **plain and ordinarily commands, don't expect fancy t
 
 #### snapshotting
 
+Replaces the tip of the current branch by creating a new commit. Be careful changing already pushed commits, because it rewrites the history.
+
     $ git add .
     $ git commit --amend
 
-Replaces the tip of the current branch by creating a new commit. Be careful changing already pushed commits, because it rewrites the history.
-
 #### branching / merging
+
+Save local modifications to a new stash, revert to previous state/head (or to commit 87de91f) and finally apply the stashed changes again.
 
     $ git stash
     $ git reset --hard # 87de91f
     $ git stash pop
 
-Saves local modifications to a new stash, reverts to previous state/head (or to commit 87de91f) and finaly applys the stashed changes again.
-
 #### sharing / updating
+
+Remove branch 'featureA'.
 
     $ git push origin :featureA
 
-Removes branch 'featureA'.
+Force pushing 'staging' branch to 'master' branch at heroku and run afterwards a migration.
 
     $ git push -f heroku staging:master
     $ heroku run rake db:migrate
 
-Forces a pushing 'staging' branch to 'master' branch at heroku and runs afterwards a migration.
-
 #### patching
+
+Select a commit '3e2734c52' from an other branch.
 
     $ git cherry-pick 3e2734c52
 
-Selects a commit '3e2734c52' from an other branch.
+Apply changes introduced by the second last and last commit pointed to by master, but do not create any commit yet.
 
     $ git -n cherrypick master~1 master
 
-Applys changes introduced by the second last and last commit pointed to by master, but do not create any commit yet.
+To get the remote with commits not present in your local branch AND vice versa
+in sync do `git rebase origin master`.
 
   [1]: http://git-scm.com/docs
   [2]: /ruby/2010/01/29/git-basics.html

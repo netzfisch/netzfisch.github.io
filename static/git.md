@@ -48,5 +48,17 @@ Apply changes introduced by the second last and last commit pointed to by master
 To get the remote with commits not present in your local branch AND vice versa
 in sync do `git rebase origin master`.
 
+#### email
+
+Extract two topmost commits from the current branch and format them as
+e-mailable patches:
+
+    $ git format-patch -2
+
+Apply a series of patches from a mailbox or a given one, e.g. '0001-use-unicorn-via-procfile'.
+
+    $ git am 0001-use-unicorn-via-procfile
+
+
   [1]: http://git-scm.com/docs
   [2]: /ruby/2010/01/29/git-basics.html

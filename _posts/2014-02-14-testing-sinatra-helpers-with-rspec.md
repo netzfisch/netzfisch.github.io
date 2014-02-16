@@ -14,12 +14,12 @@ helpers do
 end
 {% endhighlight %}
 
-But [**Rspec**][2] keept me sending **NoMethod Errors**:
+But [**Rspec**][3] keept me sending **NoMethod Errors**:
 
     NoMethodError:
       undefined method `human_date' for #<Sinatra::Application ...
 
-Than I learned in the context of the [Padrino][3] framework, that this is a "special" **Sinatra** feature - so called "shorthand helpers". Because above statement is shorthand for:
+Than I learned in the context of the [Padrino][4] framework, that this is a "special" **Sinatra** feature - so called "shorthand helpers". Because above statement is shorthand for:
 
 {% highlight ruby %}
 helpers = Module.new do

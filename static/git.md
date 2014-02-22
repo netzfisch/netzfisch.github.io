@@ -57,8 +57,11 @@ e-mailable patches:
 
 Apply a series of patches from a mailbox or a given one, e.g. '0001-use-unicorn-via-procfile'.
 
-    $ git am 0001-use-unicorn-via-procfile
+    $ git am 0001-use-unicorn-via-procfile.patch
 
+Fall back on 3-way merge if the patch does not apply cleanly:
+
+    $ git am --3way 0001-use-unicorn-via-procfile.patch
 
   [1]: http://git-scm.com/docs
   [2]: /ruby/2010/01/29/git-basics.html

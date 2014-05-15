@@ -6,10 +6,10 @@ encoding: UTF-8
 
 future:      false
 lsi:         false
-pygments:    true
+highlighter: pygments
 
 permalink:   date
-markdown:    maruku
+markdown:    kramdown
 excerpt_separator: "\n\n"
 
 author:      netzfisch

@@ -9,33 +9,42 @@ I'm not coding that often, but when the exception happens I often end up with a 
 
 Therefore I note here some **plain and ordinarily commands, don't expect fancy tricks** as it is more a **mnemonic** for me. Head for details better to the official **[git reference][1]**. Some time ago I posted some **[git basics][2]** to get started, which should be still valid!
 
-#### snapshotting
+Instead of re-writing **git man-pages** I organized it by thinking in **workflows**
 
-Replaces the tip of the current branch by creating a new commit. Be careful changing already pushed commits, because it rewrites the history.
+### commit
+
+Add all files to the **staging area** and comment the change
 
     $ git add .
+    $ git commit -m "change awesome things"
+
+or in one line:
+
+    $ git commit -a -m "change awesome things"
+
+To add annother 'change' to the last commit, do:
+
+    $ git add other_file
     $ git commit --amend
 
-#### branching / merging
+This replaces the tip of the current branch by creating a new commit, so **be careful** changing already pushed commits. In that case you have to **force the push**, because it **rewrote the history**.
 
-Save local modifications to a new stash, revert to previous state/head (or to commit 87de91f) and finally apply the stashed changes again.
+To **undo** the last commit and redo - better do:
+
+    $ git reset --soft HEAD^
+    $ vim my_file
+    $ git commit -a -c ORIG_HEAD
+
+or **revert** to previous state/head, e.g. to commit 87de91f
+
+    $ git reset --hard 87de91f
+
+Finally save local modifications to a **stash** ... do something not related ... and finally re-apply the stashed changes.
 
     $ git stash
-    $ git reset --hard # 87de91f
     $ git stash pop
 
-#### sharing / updating
-
-Remove branch 'featureA'.
-
-    $ git push origin :featureA
-
-Force pushing 'staging' branch to 'master' branch at heroku and run afterwards a migration.
-
-    $ git push -f heroku staging:master
-    $ heroku run rake db:migrate
-
-#### patching
+#### patch from other branch
 
 Select a commit '3e2734c52' from an other branch.
 
@@ -48,10 +57,9 @@ Apply changes introduced by the second last and last commit pointed to by master
 To get the remote with commits not present in your local branch AND vice versa
 in sync do `git rebase origin master`.
 
-#### email
+#### patch from other repo
 
-Extract two topmost commits from the current branch and format them as
-e-mailable patches:
+Extract two topmost commits from the current branch and format them as **email-able patches**:
 
     $ git format-patch -2
 
@@ -59,9 +67,46 @@ Apply a series of patches from a mailbox or a given one, e.g. '0001-use-unicorn-
 
     $ git am 0001-use-unicorn-via-procfile.patch
 
-Fall back on 3-way merge if the patch does not apply cleanly:
+**Fall back** on **3-way merge** if the patch does not apply cleanly:
 
     $ git am --3way 0001-use-unicorn-via-procfile.patch
+
+### branch
+
+#### merge
+
+Create a **new branch**, merge and delete it:
+
+    $ git checkout -branch featureA
+    $ git merge featureA
+    $ git branch --delete featureA  # remove localy
+    $ git push origin :featureA     # remove remote
+
+If this does not work, because meanwhile master got further commits
+
+    $ git mergetool featureA
+
+might help or try to solve conflicts by:
+
+    [featureA]$ git rebase -interactive master
+    [featureA]$ git checkout master
+    [master]$ git merge --no-ff featureA
+
+#### share / update
+
+If **push** is **rejected**, because of a **non-fast-forward** merge, force it
+
+    $ git push -f origin featureA
+
+or use the ``-f`` to **overwrite remote-master with featureA-branch**
+
+    $ git push -f heroku featureA:master
+
+#### list / rename
+
+    $ git branch --all              # List all branches
+    $ git branch --remote           # or only remote ones.
+    $ git branch --move <old> <new> # Rename old to new.
 
   [1]: http://git-scm.com/docs
   [2]: /ruby/2010/01/29/git-basics.html

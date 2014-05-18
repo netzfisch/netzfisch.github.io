@@ -1,6 +1,6 @@
 ---
 layout:    default
-tags:      developement git 2cent
+tags:      development git 2cent
 title:     git cheat sheet, things to remember
 ---
 ### git cheat sheet

@@ -40,7 +40,7 @@ Afterwards update and spice up your system with the **essential terminal, and de
 
 and some useful desktop apps:
 
-    $  bogofilter audacity chromium-browser dropbox geary gimp gkrellm gwakeonlan keepassX lubuntu-restricted-extras shutter
+    $  autokey audacity bogofilter chromium-browser diodon dropbox gimp gkrellm gwakeonlan keepassX lubuntu-restricted-extras shutter thunar
 
 Switch your shell `$ chsh -s /bin/zsh`, clone, and install your **dotfiles**, mine are [here][8].
 

@@ -14,7 +14,7 @@ helpers do
 end
 {% endhighlight %}
 
-But [**Rspec**][3] keept me sending **NoMethod Errors**:
+But [**Rspec**][3] kept me sending **NoMethod Errors**:
 
     NoMethodError:
       undefined method `human_date' for #<Sinatra::Application ...

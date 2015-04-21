@@ -6,7 +6,7 @@ I was tired of having my blog posts end up in a database off on some remote serv
 
 # License
 
-The following directories and their contents are Copyright of netzfisch. You may not reuse anything therein without my permission:
+The work in the following directories is licensed under a [Creative Commons Attribution-Share Alike 4.0  License](http://creativecommons.org/licenses/by-sa/4.0/):
 
 * *_posts/*
 * *images/*

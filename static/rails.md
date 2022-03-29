@@ -39,6 +39,21 @@ Generate default rspec test for existing controller 'events_controller.rb'
 
 tbd!
 
+#### update
+
+Update Ruby and Rails version in the Gemfile, and excute update script
+
+    $ bundle update --bundler
+    $ bundle update
+    $ export THOR_MERGE=meld && bin/rails app:update
+    $ bin/rails db:drop
+    $ bin/rails db:test:prepare
+    $ bin/rails db:migrate
+    $ bundle exec guard
+
+After this, check Rails upgrade guide at https://guides.rubyonrails.org/upgrading_ruby_on_rails.html
+for more details about upgrading your app.
+
 #### foreman
 
 tbd: Procfile

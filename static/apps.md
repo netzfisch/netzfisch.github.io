@@ -3,9 +3,20 @@ layout:    default
 tags:      developement 2cent application vim config
 title:     Apps extensions, links, tips and tricks
 ---
-Here you find **Application** specific extensions and often used hints and **workflows**. As well as some configurations and links.
+## app cheat sheet
 
-### Chrome extensions
-[mardown]()
-[onetab]()
-[vrome](https://github.com/jinzhu/vrome) bringing VIM's elegance to chrome
+Here you find **application** specific extensions, often pseudo **workflows**s and some configuration hints
+
+### Chrome
+
+Different extensions:
+
+* [mardown]()
+* [onetab]()
+* [vrome](https://github.com/jinzhu/vrome) bringing VIM's elegance to chrome
+
+### Wine
+
+New wine installation fails to start:
+
+    $ rm -R .wine

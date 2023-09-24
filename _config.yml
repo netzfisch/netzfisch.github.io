@@ -6,7 +6,9 @@ encoding: UTF-8
 
 future:      false
 lsi:         false
-highlighter: pygments
+highlighter: rouge
+plugins:
+  - jekyll-gist
 
 permalink:   date
 markdown:    kramdown

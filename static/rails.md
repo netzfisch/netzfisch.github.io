@@ -3,13 +3,13 @@ layout:    default
 tags:      developement rails 2cent
 title:     rails cheat sheet, things to remember
 ---
-### rails cheat sheet
+## rails cheat sheet
 
 I seldom start new rails application, but when the exception happens I often end up with a 'task' and the knowledge that there is a better way to handle the command line, but I can't remember!
 
 Therefore I note a this **wiki wiki page** some **plain and ordinarily commands, don't expect fancy tricks** as it is more of a **mnemonic** for me. For details check `rails --help` or `rails generate --help`!
 
-#### basic setup
+### basic setup
 
     $ rails new cool-app
     $ cd cool-app
@@ -28,6 +28,7 @@ and generate a simple user application with specs:
 #### bundle
 
 Find outdated gems with `bundle outdated` and update installed ones with `bundle update`.
+Or 'rm Gemfile.lock' when running dependency problems.
 
 #### rspec
 
@@ -39,7 +40,7 @@ Generate default rspec test for existing controller 'events_controller.rb'
 
 tbd!
 
-#### update
+### update
 
 Update Ruby and Rails version in the Gemfile, and excute update script
 
@@ -54,7 +55,7 @@ Update Ruby and Rails version in the Gemfile, and excute update script
 After this, check Rails upgrade guide at https://guides.rubyonrails.org/upgrading_ruby_on_rails.html
 for more details about upgrading your app.
 
-#### foreman
+### foreman
 
 tbd: Procfile
 

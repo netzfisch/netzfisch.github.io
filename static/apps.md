@@ -15,6 +15,13 @@ Different extensions:
 * [onetab]()
 * [vrome](https://github.com/jinzhu/vrome) bringing VIM's elegance to chrome
 
+### Postgres
+
+    $ sudo -u postgres psql
+
+    Use \? for help or press control-C to clear the input buffer.
+    postgres-# \l                             # List of databases
+
 ### Wine
 
 New wine installation fails to start:

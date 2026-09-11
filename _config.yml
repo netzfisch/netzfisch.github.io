@@ -1,4 +1,6 @@
 exclude:
+  - AGENTS.md
+  - CLAUDE.md
   - Gemfile
   - Gemfile.lock
   - Rakefile

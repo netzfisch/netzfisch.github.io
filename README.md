@@ -15,4 +15,6 @@ The work in the following directories is licensed under a [Creative Commons Attr
 * *_posts/*
 * *images/*
 
+Photos under *assets/img/posts/* are from [Unsplash](https://unsplash.com/license) under the Unsplash License and are **not** CC BY-SA.
+
 All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to http://netzfisch.github.com/ would be appreciated, but is not required.

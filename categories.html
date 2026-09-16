@@ -1,0 +1,16 @@
+---
+layout: default
+title: Categories
+---
+<h3>Categories</h3>
+<br />
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+  <a name="{{ category[0] }}"></a>
+  <h4 class="muted">{{ category[0] | upcase }}</h4>
+  <dl class="unstyled">
+    {% for post in category[1] %}
+      <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+    {% endfor %}
+  </dl>
+{% endfor %}

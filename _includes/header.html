@@ -4,6 +4,12 @@
     <meta name="description" content="{% if page.meta-tag == 'global' %}{{ site.description }}{% else %}{{ page.content | strip_html | condense_spaces | truncate:155 }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.author }}'s blog" href="/atom.xml">
+{% if page.canonical %}
+    <link rel="canonical" href="{{ page.canonical }}">
+{% endif %}
+{% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+{% endif %}
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">

@@ -6,6 +6,15 @@ sidebar_posts: related
   <div class="post_content">
     <h3>{{ page.title }}</h3>
     <span class="post_date">{{ page.date | date_to_long_string }}</span>
+{% if page.image %}
+    <img class="img-responsive post_image" src="{{ page.image }}" alt="{{ page.title }}">
+  {% if page.image_credit %}
+    <p class="text-muted"><small>Photo: {{ page.image_credit }}</small></p>
+  {% endif %}
+{% endif %}
+{% if page.canonical %}
+    <p class="text-muted"><small>Originally published on <a href="{{ page.canonical }}">{{ page.source | default: "the original site" }}</a> on {{ page.date | date_to_long_string }}.</small></p>
+{% endif %}
     {{ content }}
   </div>
 

@@ -19,7 +19,8 @@ does not appear locally usually has tomorrow's date.
 | `_layouts/`, `_includes/` | `default` page frame, `post` layout, sidebar widgets |
 | `assets/` | CSS, fonts, images |
 | `static/` | cheat sheets (`git.md`, `rails.md`, ...) rendered with `layout: default` |
-| `archive.html`, `tags.html` | generated lists; nothing to edit when adding a post |
+| `archive.html`, `tags.html`, `categories.html` | generated lists; nothing to edit when adding a post |
+| `about.md` | public profile page (`/about.html`), linked from the navigation |
 | `README.md` | public repo description and license |
 
 `.textile` posts from 2010 stay as they are; new posts are Markdown (kramdown).
@@ -37,11 +38,21 @@ colon, and the body starts on the line after the closing `---`:
     ---
     First paragraph ...
 
-- `category` is one of `linux`, `ruby`, `tools`, `web`. It becomes the first
-  URL segment (`permalink: date`).
+- `category` is one of `linux`, `management`, `ruby`, `tools`, `web`. It
+  becomes the first URL segment (`permalink: date`) and is listed with a count
+  in the CATEGORIES sidebar box (`_includes/sidebar_categories.html`).
+  `management` holds writing about companies, strategy and leadership.
 - `tags` are space separated, lowercase. `2cents` marks a short opinion note,
-  `howto` a step-by-step guide. Every tag gets an anchor on `tags.html`.
+  `howto` a step-by-step guide, `elsewhere` text first published on another
+  site. Every tag gets an anchor on `tags.html`.
 - No `date` key; the filename carries the date.
+- Optional keys, rendered by `_layouts/post.html` and `_includes/header.html`:
+  `image` (path under `assets/img/posts/`, shown under the date and as
+  `og:image`), `image_credit` (HTML allowed, e.g. photographer and Unsplash
+  link), `canonical` (URL of the original; emits `rel="canonical"` and an
+  "Originally published on" line), `source` (site name for that line).
+  Republished text always sets `canonical`, `source` and the tag `elsewhere`,
+  and keeps the original publish date in the filename.
 - The first paragraph is the excerpt on the index page
   (`excerpt_separator: "\n\n"`), so it has to stand alone.
 - Shell code is a 4-space indented block with a `$ ` prompt; Ruby uses

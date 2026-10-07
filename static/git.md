@@ -108,5 +108,19 @@ or use the ``-f`` to **overwrite remote-master with featureA-branch**
     $ git branch --remote           # or only remote ones.
     $ git branch --move <old> <new> # Rename old to new.
 
+#### clean up
+
+Delete **merged branches** on the remote and forget the **stale remote-tracking refs**:
+
+    $ git push origin --delete <branch> [<branch> ...]
+    $ git fetch --prune
+    $ git config fetch.prune true   # prune on every fetch from now on
+
+Delete local branches already **merged into main**. Anchor the `main` match, a plain `grep -v main` also spares `maintenance`:
+
+    $ git branch --merged main | grep -vE '^\*|^ *main$' | xargs -r git branch -d
+
+On GitHub, Settings → General → **Automatically delete head branches** does the remote part for merged PRs.
+
   [1]: http://git-scm.com/docs
   [2]: /ruby/2010/01/29/git-basics.html
